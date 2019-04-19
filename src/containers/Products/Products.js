@@ -1,5 +1,7 @@
 import React from 'react';
 import {ProductConsumer} from '../../context';
+import Product from '../../components/Product/Product';
+import classes from './Products.css';
 
 
  class Products extends Component {
@@ -7,6 +9,18 @@ import {ProductConsumer} from '../../context';
     return (
       <div className={classes.Products}>
           <h1 className={classes.Title}>OUR PRODUCTS</h1>
+          <section className={classes.List}>
+              <ProductConsumer>
+                {value => {
+                  return value.products.map( item => {
+                    return <Product 
+                            key={item.id}
+                            product={item}/>
+                  })
+                }}
+
+              </ProductConsumer>
+          </section>
       </div>
     )
   }
