@@ -6,25 +6,25 @@ const navigation = () => {
   return (
         <nav className={classes.Nav}>
         
-        <Link to='/'>
+        <Link to='/' className={classes.Link}>
             <div className= {classes.Logo}>
                 LOGO
             </div>
         </Link>
 
-        <ul className={classes.NavList}>
-            <li className={classes.NavItem}>
-                <Link to="/" className={classes.NavLink}>
+        <ul className={classes.List}>
+            <li className={classes.Item}>
+                <Link to="/" className={classes.Link}>
                     Store
                 </Link>
             </li>
-            <li className={classes.NavItem}>
-                <Link to="/about" className={classes.NavLink}>
+            <li className={classes.Item}>
+                <Link to="/about" className={classes.Link}>
                     About us
                 </Link>
             </li>
-            <li className={classes.NavItem}>
-                <Link to="/cart" className={classes.NavLink}>
+            <li className={classes.Item}>
+                <Link to="/cart" className={classes.Link}>
                     Cart
                 </Link>
             </li>

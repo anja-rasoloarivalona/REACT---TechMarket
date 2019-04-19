@@ -1,0 +1,6 @@
+.Layout {
+    display: grid;
+    grid-template-columns: 1fr 90vw 1fr;
+    grid-template-rows: 5rem max-content;
+    grid-auto-rows: max-content;
+}

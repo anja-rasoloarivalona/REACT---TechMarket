@@ -1,0 +1,24 @@
+:root {
+    --default-font: sans-serif;
+
+
+    --color-white: #fff;
+    --color-primary: rgb(2, 58, 95);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--default-font);
+}

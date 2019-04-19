@@ -1,0 +1,39 @@
+.Nav {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background: var(--color-primary);
+    align-items: center;
+}
+
+.Logo {
+    color: var(--color-white);
+    font-size: 2rem;
+
+
+}
+
+.List {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    height: 100%;
+    width: 40%;
+  
+
+}
+
+.Link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-white);
+
+}
+
+.Item {
+    padding: 1rem 2.5rem;
+    
+}
