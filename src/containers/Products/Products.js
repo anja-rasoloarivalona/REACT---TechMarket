@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {ProductConsumer} from '../../context';
 
- const products = () => {
-  return (
-    <div>
-      hello from products
-    </div>
-  )
+
+ class Products extends Component {
+  render() {
+    return (
+      <div className={classes.Products}>
+          <h1 className={classes.Title}>OUR PRODUCTS</h1>
+      </div>
+    )
+  }
 }
 
-export default products
+
+export default Products;

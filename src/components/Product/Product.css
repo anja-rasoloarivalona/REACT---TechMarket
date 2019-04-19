@@ -1,0 +1,26 @@
+.Product {
+    width: 20rem;
+    height: 30rem;
+
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: 1.5fr 1fr;
+}
+
+
+.ImgContainer {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
