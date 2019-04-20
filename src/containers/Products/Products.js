@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {ProductConsumer} from '../../context';
 import Product from '../../components/Product/Product';
 import classes from './Products.css';
@@ -10,17 +10,17 @@ import classes from './Products.css';
       <div className={classes.Products}>
           <h1 className={classes.Title}>OUR PRODUCTS</h1>
           <section className={classes.List}>
-              <ProductConsumer>
-                {value => {
-                  return value.products.map( item => {
+          <ProductConsumer>
+                {val => {
+                  return val.products.map( item => {
                     return <Product 
                             key={item.id}
                             product={item}/>
                   })
                 }}
-
-              </ProductConsumer>
-          </section>
+             </ProductConsumer>
+          </section>  
+          
       </div>
     )
   }
@@ -28,3 +28,10 @@ import classes from './Products.css';
 
 
 export default Products;
+
+
+
+
+
+
+

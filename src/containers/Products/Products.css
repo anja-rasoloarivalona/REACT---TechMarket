@@ -1,0 +1,18 @@
+.Products {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.List {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20vw);
+    grid-gap: 2rem;
+    border: 1px solid red;
+}

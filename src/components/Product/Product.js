@@ -10,6 +10,7 @@ import classes from './Product.css';
     return (
 
     <ProductConsumer>
+    {value => (
       <div className={classes.Product}>
           <div className={classes.ImgContainer}>
               <img src={img} alt="Product img" className={classes.Img}/>
@@ -20,6 +21,7 @@ import classes from './Product.css';
                <div className={classes.Price}>${price}</div>
           </div>
       </div>
+      )}
       </ProductConsumer>
     )
   }

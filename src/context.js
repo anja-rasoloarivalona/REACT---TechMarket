@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {storeProducts, detailProduct} from './data';
 
 
+
 const ProductContext = React.createContext();
 
 
@@ -15,18 +16,25 @@ const ProductContext = React.createContext();
 
     componentDidMount() {
         this.productsListHandler();
+        console.log('did mount')
+    
     }
 
     productsListHandler = () => {
-        let productsList = [];
+        let tempProducts = [];
         storeProducts.forEach(item => {
             const singleItem = {...item};
-            productsList = [...productsList, singleItem]
+            tempProducts = [...tempProducts, singleItem]
         });
         this.setState(() => {
-            return {products: productsList}
+            return {products:tempProducts}
         });
+      
     };
+
+
+
+    
 
 
 
@@ -34,6 +42,7 @@ const ProductContext = React.createContext();
     return (
       <ProductContext.Provider value={{
         ...this.state
+        
       }}>
 
       {this.props.children}
@@ -45,6 +54,4 @@ const ProductContext = React.createContext();
 
 const ProductConsumer = ProductContext.Consumer;
 
-
-
-export {ProductProvider, ProductConsumer};
+export {ProductProvider,ProductConsumer};
