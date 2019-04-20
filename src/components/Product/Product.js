@@ -5,7 +5,7 @@ import classes from './Product.css';
  class Product extends Component {
   render() {
 
-    const {id, title, img, price, inCart, brand} = this.props.product;
+    const {id, title, subtitle, color, img, price, brand, inCart} = this.props.product;
 
     return (
 
@@ -16,8 +16,9 @@ import classes from './Product.css';
               <img src={img} alt="Product img" className={classes.Img}/>
           </div>
           <div className={classes.Details}>
-               <h3 className={classes.Title}>{title}</h3>
-               <div className={classes.Brand}>By {brand}</div> 
+               <h3 className={classes.Brand}>{brand}</h3>
+               <div className={classes.Title}>{title}</div> 
+               <div className={classes.Subtitle}>{subtitle} - {color}</div> 
                <div className={classes.Price}>${price}</div>
           </div>
       </div>
