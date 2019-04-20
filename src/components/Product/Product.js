@@ -20,6 +20,10 @@ import classes from './Product.css';
                <div className={classes.Title}>{title}</div> 
                <div className={classes.Subtitle}>{subtitle} - {color}</div> 
                <div className={classes.Price}>${price}</div>
+
+               <button className={classes.Button}>
+                   <span className={classes.ButtonText}>Buy</span>
+               </button>
           </div>
       </div>
       )}

@@ -24,20 +24,53 @@
 }
 
 
-.Details {
-    
+.Details { 
     width: 100%;
     height: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: .5rem 1rem;
+
+
 }
 
-.Title, .Subtitle {
-    font-size: 2rem;
+.Title {
+    color: grey;
+} 
+
+.Subtitle {
+    color: grey;
 }
 
 .Brand {
-    font-size: 2rem;
+    
 }
 
 .Price {
-    font-size: 2rem;
+    
+}
+
+.Button {
+    width: 30%;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    display: inline-block; 
+    border-radius: 1rem;
+    transition: all .2s;
+    position: relative;
+    font-size: 2rem;            
+    border: none;
+    cursor: pointer;
+    background: var(--color-white);
+    align-self: center;
+  
+}
+
+
+.Button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(black,.2);
+    
+
 }
