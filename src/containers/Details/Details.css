@@ -1,0 +1,34 @@
+.Details {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.ImgContainer {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.Info {
+    padding: 1.5rem 3rem;
+    width: 30vw;
+}
+
+.Info h1 {
+    font-size: 3rem;
+}
+
+.Info h4 {
+    margin: 2.5rem 0;
+    font-size: 2rem;
+}

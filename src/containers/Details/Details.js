@@ -17,8 +17,9 @@ class Details extends Component {
                 </div>
          
                 <div className={classes.Info}>
-                    <h1>Model: {subtitle}</h1>
-                    <h4>Brand: {brand}</h4>
+                    <h1> {brand}</h1>
+                    <h1> {subtitle}</h1>
+                    
                     <h4>
                       price: ${price}
                     </h4>
