@@ -16,8 +16,7 @@
     grid-template-rows: repeat(auto-fit, 40rem);
     grid-auto-rows: 40rem;
     justify-content: center;
-    grid-gap: 2rem;
-    border: 1px solid red;
+    grid-gap: 4rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
 }

@@ -13,13 +13,15 @@ import classes from './Product.css';
     {value => (
       <div className={classes.Product}>
           <div className={classes.ImgContainer}>
+                <div className={classes.Price}>${price}</div>
               <img src={img} alt="Product img" className={classes.Img}/>
           </div>
           <div className={classes.Details}>
-               <h3 className={classes.Brand}>{brand}</h3>
-               <div className={classes.Title}>{title}</div> 
-               <div className={classes.Subtitle}>{subtitle} - {color}</div> 
-               <div className={classes.Price}>${price}</div>
+               <h4 className={classes.Brand}>{brand}</h4>
+               <h5 className={classes.Subtitle}>{subtitle} - {color}</h5> 
+           
+               
+               
 
                <button className={classes.Button}>
                    <span className={classes.ButtonText}>Buy</span>
