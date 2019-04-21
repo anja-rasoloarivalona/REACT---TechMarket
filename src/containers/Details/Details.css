@@ -1,4 +1,4 @@
-.Details {
+.Container {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
@@ -19,16 +19,31 @@
     object-fit: cover;
 }
 
-.Info {
-    padding: 1.5rem 3rem;
+.Details {
     width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
 }
 
-.Info h1 {
+.Title {
     font-size: 3rem;
 }
 
-.Info h4 {
-    margin: 2.5rem 0;
+.Price {
     font-size: 2rem;
 }
+
+.InfoContainer {
+    margin: 2rem 0;
+}
+
+.Cta {
+    display: flex;
+}
+
+.Link {
+    text-decoration: none;
+}
+
