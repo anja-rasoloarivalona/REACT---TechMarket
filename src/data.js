@@ -21,7 +21,7 @@ export const storeProducts = [
         subtitle: "Sony ZX220BT",
         color: "black",
         img: "img/product/product-3.png",
-        price: 10,
+        price: 159,
         brand: "Sony",
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,

@@ -15,7 +15,6 @@
 }
 
 .Product:hover {
-    border: 1px solid black;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(black,.2);
 }
