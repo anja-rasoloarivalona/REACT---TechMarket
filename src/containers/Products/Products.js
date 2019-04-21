@@ -8,7 +8,7 @@ import classes from './Products.css';
   render() {
     return (
       <div className={classes.Products}>
-          <h1 className={classes.Title}>OUR PRODUCTS</h1>
+          <h1 className={classes.Title}>Our Headphones</h1>
           <section className={classes.List}>
           <ProductConsumer>
                 {val => {

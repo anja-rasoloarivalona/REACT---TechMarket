@@ -3,7 +3,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+ 
     overflow: hidden;  
     cursor: pointer;
   
@@ -36,6 +36,8 @@
 .Img {
     width: 60%;
     object-fit: cover;
+    transform: translateX(20%);
+
 }
 
 .Price {
@@ -104,7 +106,7 @@
     cursor: pointer;
     background: orange;
     align-self: center;
-    transform: translateY(100%);
+    transform: translateY(-40%);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -15,13 +15,14 @@ import {Link} from 'react-router-dom';
       <div className={classes.Product}
             onClick={() => 
             value.handleDetail(id)}>
-            
+
           <div className={classes.ImgContainer}>
                 <div className={classes.Price}>${price}</div>
             <Link to="/details">
               <img src={img} alt="Product img" className={classes.Img}/>
             </Link>
           </div>
+          
           <div className={classes.Details}>
                <h4 className={classes.Brand}>{brand}</h4>
                <h5 className={classes.Subtitle}>{subtitle} - {color}</h5> 
