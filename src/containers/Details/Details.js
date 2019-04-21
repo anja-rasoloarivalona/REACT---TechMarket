@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {ProductConsumer} from '../../context';
 import {Link} from 'react-router-dom';
+import classes from './Details.css';
 
 class Details extends Component {
   render() {
     return (
       <ProductConsumer>
         {(value) =>{
-          const {id, brand, img, info, price, subtitle, inCart} = value.productsDetail;
+          const { brand, img, info, price, subtitle, inCart} = value.productsDetail;
 
           return (
             <div className={classes.Details}>

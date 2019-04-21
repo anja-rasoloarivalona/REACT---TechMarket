@@ -8,7 +8,7 @@ const navigation = () => {
         
         <Link to='/' className={classes.Link}>
             <div className= {classes.Logo}>
-                LOGO
+                HIGH - TECH
             </div>
         </Link>
 
