@@ -1,11 +1,32 @@
-import React from 'react'
+import React, {Component} from 'react';
+import {ProductConsumer} from '../../context';
+import classes from './Cart.css';
 
-const  cart = () => {
-  return (
-    <div>
-      Hello from cart
-    </div>
-  )
+
+
+ class Cart extends Component {
+  render() {
+    return (
+      <section className={classes.Cart}>
+        <ProductConsumer>
+            {value => {
+              const {cart} = value;
+              if(cart.length > 0) {
+                return (
+                  <React.Fragment>
+                    Your cart is not empty
+                  </React.Fragment>
+                );
+              } else {
+                return <h1>Your cart is empty</h1>
+              }
+            }}
+        </ProductConsumer>
+      </section>  
+      
+      )
+  }
 }
 
-export default cart; 
+export default Cart;
+

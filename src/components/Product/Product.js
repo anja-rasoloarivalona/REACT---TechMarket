@@ -30,8 +30,15 @@ import {Link} from 'react-router-dom';
                
                
 
-               <button className={classes.Button}>
-                   <span className={classes.ButtonText}>Buy</span>
+               <button className={classes.Button}
+                       disabled={inCart ? true : false}
+                        onClick={() => {
+                          value.addToCart(id)
+                          ;
+                        }}>
+
+                   <span className={classes.ButtonText} disabled>
+                      {inCart ? 'In Cart' : 'Buy' }</span>
                </button>
           </div>
       </div>

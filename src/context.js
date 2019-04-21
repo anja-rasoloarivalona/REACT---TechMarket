@@ -63,6 +63,7 @@ const ProductContext = React.createContext();
       () => {this.addTotals();
       }
       );
+
     }
 
     addTotals = () => {
@@ -78,6 +79,9 @@ const ProductContext = React.createContext();
           cartTotal: total
         }
       })
+
+      
+      console.log(this.state.cart);
     }
 
   render() {
