@@ -3,121 +3,94 @@
     height: 100%;
     display: flex;
     flex-direction: column;
- 
+    justify-items: center;
+    align-items: center;
     overflow: hidden;  
-    cursor: pointer;
-  
- 
-}
-
-.Product:hover .Button {
-    transform: translateY(-41%)
+    cursor: pointer; 
 }
 
 .Product:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(black,.2);
+    box-shadow: 0px 0px 10px 0px rgba(176,179,170,1);
 }
 
 
 .ImgContainer {
     width: 100%;
-    height: 65%;
+    height: 55%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     background: var(--color-white);
     position: relative;
-
+   
 }
-
 
 .Img {
-    width: 60%;
+    height: 80%;  
     object-fit: cover;
-    transform: translateX(20%);
-
 }
-
-.Price {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: blue;
-    padding: 1rem 2.5rem;
-    border-radius: 5%;
-    color: white;
-    font-size: 1.2rem;
-
-}
-
 
 .Details {
-    padding-top: .4rem;
+    margin-top: 1rem;
     width: 100%;
     height: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
-   
-
-
-}
-
-.Brand {
-    padding-left: 1rem;
-    margin-top: 1.5rem;
-}
-
-.Subtitle {
-    color: grey;
-    font-weight: 300;
-    padding-left: 1rem;
-    margin-bottom: 4.5rem;
-   
- 
+    font-size: 1.4rem;
 }
 
 .Title {
-    color: grey;
-    font-weight: 300;
-    padding-left: 1rem;
-
-} 
-
-
-
-
-
+    margin: .4rem 0;
+}
 
 
 .Button {
-    width: 100%;
+    width: 50%;
+    height: 3rem;
     text-decoration: none;
-    padding: 1rem 0rem;
-    display: inline-block; 
-    transition: all .2s;
-    position: relative;
-    font-size: 2rem;            
+    display: inline-block;              
     border: none;
     cursor: pointer;
-    background: orange;
-    align-self: center;
-    transform: translateY(-40%);
     display: flex;
-    align-items: center;
     justify-content: center;
-     font-family: 'Open Sans', sans-serif;
-   /* margin-top: 2rem;*/
-  
+    align-items: center;
+    border: .5px solid rgb(212, 211, 211);
+    background: transparent;
+    margin-top: 2rem;
 }
 
+.ButtonText {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem; 
+    margin-left: 1rem;
+    text-transform: uppercase;
+    color: grey;
+    font-weight: 600;   
+}
+
+.Icon {
+    fill: grey;
+    transform: translateY(1px);
+}
+
+.Icon div svg {
+   width: 1.5rem;
+   height: 1.5rem;
+}
 
 .Button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(black,.2);
-    
-
+    background: orange;
+    border: none;
 }
+
+.Button:hover .ButtonText {
+    color: white;
+}
+
+.Button:hover .Icon {
+    fill: white;
+}
+
