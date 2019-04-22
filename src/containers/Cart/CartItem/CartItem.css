@@ -1,0 +1,23 @@
+.Item {
+    display: flex;
+    height: 20rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ImgContainer {
+    width: 10rem;
+    height: 10rem;
+}
+
+
+.Img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.Control {
+    width: 5%;
+    display: flex;
+    justify-content: space-between;
+}

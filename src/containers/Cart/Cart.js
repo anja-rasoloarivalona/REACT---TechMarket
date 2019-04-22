@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {ProductConsumer} from '../../context';
 import classes from './Cart.css';
+import CartItems from '../Cart/CartItems/CartItems';
 
 
 
@@ -11,15 +12,20 @@ import classes from './Cart.css';
         <ProductConsumer>
             {value => {
               const {cart} = value;
+
               if(cart.length > 0) {
+
                 return (
                   <React.Fragment>
-                    Your cart is not empty
+                    <CartItems value={value}/>
                   </React.Fragment>
                 );
+
               } else {
                 return <h1>Your cart is empty</h1>
               }
+
+
             }}
         </ProductConsumer>
       </section>  
