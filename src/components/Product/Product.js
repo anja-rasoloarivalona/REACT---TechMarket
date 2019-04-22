@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
  class Product extends Component {
   render() {
 
-    const {id, title, subtitle, color, img, price, brand, inCart} = this.props.product;
+    const {id, model,brand, color, img, price, inCart} = this.props.product;
 
     return (
 
@@ -25,7 +25,7 @@ import {Link} from 'react-router-dom';
           
           <div className={classes.Details}>
                <h4 className={classes.Brand}>{brand}</h4>
-               <h5 className={classes.Subtitle}>{subtitle} - {color}</h5> 
+               <h5 className={classes.Subtitle}>{model} - {color}</h5> 
            
                
                

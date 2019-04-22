@@ -9,7 +9,7 @@ class Details extends Component {
     return (
       <ProductConsumer>
         {(value) =>{
-          const { brand, img, info, price, subtitle, inCart} = value.productsDetail;
+          const { type, model, brand, img, info, price, inCart} = value.productsDetail;
 
           return (
             <div className={classes.Container}>
@@ -19,14 +19,14 @@ class Details extends Component {
          
                 <div className={classes.Details}>
                     <h1 className={classes.Title}> {brand}</h1>
-                    <h1 className={classes.Title}> {subtitle}</h1>
+                    <h1 className={classes.Title}> {model}</h1>
                     
                     <h4 className={classes.Price}>
                       price: ${price}
                     </h4>
 
                     <div className={classes.InfoContainer}> 
-                      Some info about the product
+                      {type}
                         <p className={classes.Info}>
                           {info}
                         </p>

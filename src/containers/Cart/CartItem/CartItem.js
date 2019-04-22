@@ -3,7 +3,7 @@ import classes from './CartItem.css'
 
 
 const cartItem = ({item, value}) => {
-    const {id, title, img, price, total, count} = item;
+    const {id, model, brand, img, price, total, count} = item;
     const {increment, decrement, removeItem} = value;
 
   return (
@@ -12,7 +12,7 @@ const cartItem = ({item, value}) => {
             <img className={classes.Img} src={img} alt="product" />
         </div>
         <div className={classes.Title}>
-            <span>product: {title}</span>
+            <span>{model} - {brand} </span>
         </div>
         <div className={classes.Price}>
             <span>price: ${price}</span>
