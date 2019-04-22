@@ -30,10 +30,38 @@
     text-decoration: none;
     text-transform: uppercase;
     color: var(--color-white);
+    display: flex;
+    align-items: center;
 
 }
 
 .Item {
-    padding: 1rem 2.5rem;
+    padding: 1rem 2.5rem;   
+    position: relative;   
+}
+
+.Icon {
+    margin-right: 1rem;
+    fill: white;
+}
+
+.Icon div svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.Badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    font-size: 1.3rem;
     
 }

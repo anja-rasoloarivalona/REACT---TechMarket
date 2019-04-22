@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
+import ReactSVG from 'react-svg';
+import cartIcon from '../../assets/icon/SVG/cart.svg';
 
 const navigation = () => {
   return (
@@ -25,8 +27,10 @@ const navigation = () => {
             </li>
             <li className={classes.Item}>
                 <Link to="/cart" className={classes.Link}>
-                    Cart
+                    <ReactSVG src={cartIcon} className={classes.Icon}/> 
+                    Cart              
                 </Link>
+                <span className={classes.Badge}>1</span> 
             </li>
         
         </ul>

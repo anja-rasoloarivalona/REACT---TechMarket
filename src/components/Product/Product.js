@@ -40,7 +40,7 @@ import magnifyingGlass from '../../assets/icon/SVG/magnifying-glass.svg';
                   <ReactSVG src={cartIcon} className={classes.Icon}/>
                    <span className={classes.ButtonText} disabled>
                       {inCart ? 'In Cart' : 'Add to cart' }
-                    </span>  
+                    </span> 
                </button>
 
           </div>
