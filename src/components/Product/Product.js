@@ -28,6 +28,7 @@ import magnifyingGlass from '../../assets/icon/SVG/magnifying-glass.svg';
           <div className={classes.Details}>
                 <div className={classes.Title}>{brand} {model}</div>
                 <div className={classes.Subtitle}>{type} - {color}</div>
+                <div className={classes.Price}>${price}</div>
           
          
            

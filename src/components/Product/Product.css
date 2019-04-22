@@ -42,9 +42,15 @@
     font-size: 1.4rem;
 }
 
-.Title {
+.Title, .Price {
     margin: .4rem 0;
 }
+
+.Price {
+    color: grey;
+}
+
+
 
 
 .Button {
