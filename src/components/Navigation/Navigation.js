@@ -3,15 +3,14 @@ import { Link } from 'react-router-dom';
 import classes from './Navigation.css';
 import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
+import logo from '../../assets/img/logo.png';
 
 const navigation = () => {
   return (
         <nav className={classes.Nav}>
         
         <Link to='/' className={classes.Link}>
-            <div className= {classes.Logo}>
-                HIGH - TECH
-            </div>
+                <img src={logo} alt="logo img" className= {classes.Logo}/>          
         </Link>
 
         <ul className={classes.List}>

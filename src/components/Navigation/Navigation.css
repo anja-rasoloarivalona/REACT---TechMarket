@@ -9,9 +9,8 @@
 }
 
 .Logo {
-    color: var(--color-white);
-    font-size: 2rem;
-
+  width: 80%;
+  object-fit: cover;
 
 }
 
