@@ -4,7 +4,7 @@
 
     display: grid;
 
-    grid-template-columns: minmax(max-content, 1fr) 20rem;
+    grid-template-columns: minmax(max-content, 1fr) 30rem;
     grid-template-rows: max-content;
     grid-auto-rows: max-content;
 }

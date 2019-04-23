@@ -1,0 +1,59 @@
+.Total {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    height: 50%;
+}
+
+.Title {
+    margin-bottom: 1rem;
+}
+
+
+.Details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.SubDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-left: 5rem;
+}
+
+.Info {
+    width: 50%;
+}
+
+
+.CTA {
+    display: flex;
+}
+
+.CTA a {
+    text-decoration: none;
+}
+
+.Button {
+    margin: 0 .5rem;
+    cursor: pointer;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: .5px solid rgb(212, 211, 211);
+    padding: .5rem 1rem;
+    background: transparent;
+
+}
