@@ -4,6 +4,7 @@ import classes from './Navigation.css';
 import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
 import logo from '../../assets/img/logo.png';
+import {ProductConsumer} from '../../context';
 
 const navigation = () => {
   return (
@@ -24,12 +25,29 @@ const navigation = () => {
                     About us
                 </Link>
             </li>
+
             <li className={classes.Item}>
                 <Link to="/cart" className={classes.Link}>
                     <ReactSVG src={cartIcon} className={classes.Icon}/> 
                     Cart              
                 </Link>
-                <span className={classes.Badge}>1</span> 
+                <ProductConsumer>
+                    {value => {
+                        const {cartItemCount} = value;
+                        if(cartItemCount > 0) {
+                            return (
+                                <span className={classes.Badge}>{cartItemCount}</span> 
+                            )
+                        } else {
+                            return (
+                                <span></span>
+                            )
+                        }
+
+                        
+                    }}
+                    
+                </ProductConsumer>
             </li>
         
         </ul>

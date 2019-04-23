@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {ProductConsumer} from '../../context';
 import classes from './Cart.css';
 import CartItems from '../Cart/CartItems/CartItems';
+import CartTotals from './CartTotal/CartTotal';
+
 
 
 
@@ -18,6 +20,7 @@ import CartItems from '../Cart/CartItems/CartItems';
                 return (
                   <React.Fragment>
                     <CartItems value={value}/>
+                    <CartTotals value={value} />
                   </React.Fragment>
                 );
 

@@ -14,7 +14,8 @@ const ProductContext = React.createContext();
          cart: [],
          cartSubtotal: 0,
          cartTax: 0,
-         cartTotal: 0
+         cartTotal: 0,
+         cartItemCount: 0
     };
 
     componentDidMount() {
@@ -60,18 +61,34 @@ const ProductContext = React.createContext();
         return {products: tempProducts, cart:[...this.state.cart, product]}
       },
       
-      () => {this.addTotals();
+      () => {
+        this.addTotals();
+        this.cartItemCounter();
       }
       );
+    }
 
+    cartItemCounter = () => {
+      let count = 0;
+      this.state.cart.map( item => count += item.count)
+
+      this.setState(() => {
+        return {
+          cartItemCount: count
+        }
+      })
     }
 
     addTotals = () => {
       let subTotal = 0;
       this.state.cart.map(item => (subTotal += item.total));
+
       const tempTax = subTotal * .15;
       const tax = parseFloat(tempTax.toFixed(2));
-      const total = subTotal + tax;
+
+      const totalTemp = subTotal + tax;
+      const total = totalTemp.toFixed(2);
+
       this.setState(() => {
         return {
           cartSubtotal: subTotal,
@@ -79,8 +96,9 @@ const ProductContext = React.createContext();
           cartTotal: total
         }
       })    
-      console.log(this.state.cart);
     }
+
+
 
     increment = id => {
       let newCart = [...this.state.cart];
@@ -93,7 +111,8 @@ const ProductContext = React.createContext();
 
       this.setState( () => {return { cart: [...newCart]};
          },  
-      () => this.addTotals()
+      () => { this.addTotals();
+              this.cartItemCounter(); }
       )
     }
 
@@ -114,7 +133,8 @@ const ProductContext = React.createContext();
       else {
         product.total = product.count * product.price;
         this.setState(() => {return{cart:[...newCart]};
-      }, () => {this.addTotals();})
+      }, () => {this.addTotals();
+                this.cartItemCounter();})
       }
     };
 
@@ -136,7 +156,8 @@ const ProductContext = React.createContext();
           products: [...tempProducts]
         }
       }, () => {
-        this.addTotals();      })
+        this.addTotals();  
+        this.cartItemCounter();    })
     }
 
 
@@ -146,6 +167,7 @@ const ProductContext = React.createContext();
       },  () => {
           this.productsListHandler();
           this.addTotals();
+          this.cartItemCounter();
       })
     }
 
