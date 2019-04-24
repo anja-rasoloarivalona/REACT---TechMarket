@@ -1,10 +1,13 @@
 .Item {
-    display: flex;
     height: 17rem;
-    align-items: center;
-    justify-content: space-around;
     font-family: 'open-sans', sans-serif;
     font-size: 1.4rem;
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content 1fr 1fr 1fr max-content 1fr;
+    align-items: center;
+    justify-items: center;  
+    margin-top: 2rem;
 }
 
 .ImgContainer {
@@ -17,6 +20,14 @@
     width: 100%;
     object-fit: cover;
 }
+
+.Title {
+    justify-self: start;
+    width: 100%;
+    padding-left: 5rem;
+}
+
+
 
 .Price {
     
@@ -40,8 +51,6 @@
     border: none;
     outline: none;
     cursor: pointer;
-
-
 }
 
 .Count {
@@ -52,9 +61,6 @@
     align-items: center;
     padding-left: 1.3rem;
     margin-left: 1rem;
-
-
- 
 }
 
 .ButtonDec {
@@ -64,7 +70,6 @@
     background: red;
 }
 
-
 .ButtonInc {
     position: absolute;
     top: 0;
@@ -72,10 +77,6 @@
 }
 
 
-
-
-
-
 .RemoveButton {
-
+    cursor: pointer;
 }
