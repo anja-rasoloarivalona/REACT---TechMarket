@@ -1,5 +1,7 @@
 import React from 'react';
-import classes from './CartItem.css'
+import classes from './CartItem.css';
+import ReactSVG from 'react-svg';
+import binIcon from '../../../assets/icon/SVG/bin.svg';
 
 
 const cartItem = ({item, value}) => {
@@ -30,7 +32,7 @@ const cartItem = ({item, value}) => {
 
 
         <div className={classes.Remove}>
-            <button className={classes.RemoveButton} onClick={() => removeItem(id)}>Remove</button>
+            <ReactSVG src={binIcon} className={classes.RemoveButton} onClick={() => removeItem(id)}/> 
         </div>
 
         <div className={classes.Total}>
