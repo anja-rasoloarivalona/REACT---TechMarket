@@ -22,22 +22,59 @@
     
 }
 
+
+
+.Control {
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;   
+}
+
+
+
 .Button {
-    padding: .5rem .9rem;
-    border-radius: 5px;
+    width: 2rem;
+    height: 50%;
     border: none;
+    outline: none;
+    cursor: pointer;
+
+
 }
 
 .Count {
-    padding: .5rem .9rem;
-    border: none;
+    width: 5rem;
+    height:4rem;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    padding-left: 1.3rem;
+    margin-left: 1rem;
+
+
+ 
 }
 
-.Control {
-    width: 15%;
-    display: flex;
-    justify-content: space-between;
+.ButtonDec {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: red;
 }
+
+
+.ButtonInc {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
 
 .RemoveButton {
     padding: .6rem 1rem;
