@@ -8,6 +8,8 @@ const cartItem = ({item, value}) => {
     const {id, model, brand, img, price, total, count} = item;
     const {increment, decrement, removeItem} = value;
 
+
+
   return (
     <div className={classes.Item}>
         <div className={classes.ImgContainer}>
@@ -36,7 +38,7 @@ const cartItem = ({item, value}) => {
         </div>
 
         <div className={classes.Total}>
-            Total: ${total}
+            Total: ${total.toFixed(2)}
         </div>
 
     </div>
