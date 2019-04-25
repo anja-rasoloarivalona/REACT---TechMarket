@@ -15,7 +15,8 @@ const ProductContext = React.createContext();
          cartSubtotal: 0,
          cartTax: 0,
          cartTotal: 0,
-         cartItemCount: 0
+         cartItemCount: 0,
+         searchedValue: ''
     };
 
     componentDidMount() {
@@ -171,6 +172,15 @@ const ProductContext = React.createContext();
       })
     }
 
+
+    searchHandler = (event) => {
+
+      const search = event.target.value;
+      this.setState(
+      
+         { search: search})
+    }
+
       
     
 
@@ -183,7 +193,8 @@ const ProductContext = React.createContext();
         increment: this.increment,
         decrement: this.decrement,
         removeItem: this.removeItem,
-        clearCart: this.clearCart
+        clearCart: this.clearCart,
+        searchHandler: this.searchHandler
 
         
       }}>
