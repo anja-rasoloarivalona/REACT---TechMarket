@@ -5,6 +5,7 @@ import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
 import logo from '../../assets/img/logo.png';
 import {ProductConsumer} from '../../context';
+import NavForm from './NavForm/NavForm';
 
 const navigation = () => {
   return (
@@ -13,7 +14,7 @@ const navigation = () => {
         <Link to='/' className={classes.Link}>
                 <img src={logo} alt="logo img" className= {classes.Logo}/>          
         </Link>
-
+        <NavForm />
         <ul className={classes.List}>
             <li className={classes.Item}>
                 <Link to="/" className={classes.Link}>
