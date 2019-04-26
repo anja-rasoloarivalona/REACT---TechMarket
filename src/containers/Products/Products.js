@@ -12,11 +12,35 @@ import classes from './Products.css';
           <section className={classes.List}>
           <ProductConsumer>
                 {val => {
-                  return val.products.map( item => {
+
+                  const {searchedValue, products} = val;
+
+
+
+                  if (searchedValue !== "") { 
+                  let searchedProducts = products;
+
+                  searchedProducts = searchedProducts .filter(item => {
+                  return item.brand.toLowerCase().search(
+                    searchedValue.toLowerCase()) !== -1;
+                  });
+                  
+
+                   return searchedProducts.map(item => {
+                            return <Product 
+                                key={item.id}
+                                product={item}/>
+                      })
+
+                  
+
+                  } else {
+
+                  return  products.map( item => {
                     return <Product 
                             key={item.id}
                             product={item}/>
-                  })
+                  })}
                 }}
              </ProductConsumer>
           </section>  

@@ -179,7 +179,6 @@ const ProductContext = React.createContext();
       this.setState(
       
          { searchedValue: search});
-      console.log(this.state.searchedValue);
     }
 
       
