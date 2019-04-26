@@ -3,7 +3,7 @@ export const storeProducts = [
         id: 1,
         type: "Wireless Headphones",
         model: "Solo3",
-        brand: "Beats by Dr. Dre",
+        brand: "Beats",
         color: "red",
         img: "img/product/product-1.png",
         price: 285.65,    

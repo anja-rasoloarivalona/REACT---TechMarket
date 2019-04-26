@@ -14,7 +14,9 @@ const navigation = () => {
         <Link to='/' className={classes.Link}>
                 <img src={logo} alt="logo img" className= {classes.Logo}/>          
         </Link>
+
         <NavForm />
+        
         <ul className={classes.List}>
             <li className={classes.Item}>
                 <Link to="/" className={classes.Link}>
