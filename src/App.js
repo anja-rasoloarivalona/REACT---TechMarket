@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import Sidebar from './components/Sidebar/Sidebar';
+
 import Navbar from './components/Navigation/Navigation';
 import Products from './containers/Products/Products';
 import Details from './containers/Details/Details';
@@ -20,7 +20,6 @@ class App extends Component {
 
       <Layout>
           <Navbar />
-          <Sidebar />
             <Switch>
                 <Route exact path="/" component={Products}/>
                 <Route path="/details" component={Details}/>

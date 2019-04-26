@@ -2,11 +2,14 @@ import React, {Component} from 'react';
 import {ProductConsumer} from '../../context';
 import Product from '../../components/Product/Product';
 import classes from './Products.css';
+import Sidebar from '../../components/Sidebar/Sidebar';
 
 
  class Products extends Component {
   render() {
     return (
+      <section className={classes.Layout}>
+      <Sidebar />
       <div className={classes.Products}>
           <h1 className={classes.Title}>Our Headphones</h1>
           <section className={classes.List}>
@@ -46,6 +49,7 @@ import classes from './Products.css';
           </section>  
           
       </div>
+      </section>
     )
   }
 }
