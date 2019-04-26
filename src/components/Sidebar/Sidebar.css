@@ -5,7 +5,6 @@
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     border-right: 1px solid grey;
     margin-top: 1.5rem; 
@@ -14,10 +13,19 @@
 
 .Title {
     padding: 1rem 2rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
 }
 
 .Link {
+    background: red;
+    margin: .5rem;
     text-decoration: none;
+    width: 70%;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: .8rem 1.4rem;
+  
 }
 

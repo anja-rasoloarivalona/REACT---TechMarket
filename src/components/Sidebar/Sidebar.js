@@ -7,10 +7,11 @@ const sidebar = () => {
     
             <nav className={classes.Sidebar}>
             <h4 className={classes.Title}>Explore by Category</h4>
-                <Link to='/' className={classes.Link}>Headphones</Link>
-                <Link to='/' className={classes.Link}>Computers</Link>
-                <Link to='/' className={classes.Link}>TV</Link>
-                <Link to='/' className={classes.Link}>Smartphones</Link>
+                <Link to='/' className={classes.Link}>Store</Link>
+                <Link to='/headphones' className={classes.Link}>Headphones</Link>
+                <Link to='/tv' className={classes.Link}>Computers</Link>
+                <Link to='/computers' className={classes.Link}>TV</Link>
+                <Link to='/smartphones' className={classes.Link}>Smartphones</Link>
             </nav>
 
   )
