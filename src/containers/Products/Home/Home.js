@@ -1,10 +1,16 @@
 import React from 'react';
 import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
+import classes from './Home.css';
 
 const home = () => {
   return (
-    <ProductConsumer>
+
+    <React.Fragment>
+    <h1 className={classes.Title}>Our Products</h1>
+    <section className={classes.List}>
+        <ProductConsumer>  
+
         { val => {
             const {searchedValue, products} = val;
             let searchedProducts = [...products];
@@ -34,6 +40,8 @@ const home = () => {
 
         }}
     </ProductConsumer>
+    </section>  
+    </React.Fragment>
   )
 }
 

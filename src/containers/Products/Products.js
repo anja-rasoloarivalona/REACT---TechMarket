@@ -20,10 +20,10 @@ import Smartphones from './Smartphones/Smartphones';
             <Sidebar />
 
               <div className={classes.Products}>
-                  <h1 className={classes.Title}>Our Headphones</h1>
+                  
 
                 
-                      <section className={classes.List}>
+                      
                      
                         <Route exact path="/store" component={Home}></Route>
                         <Route path="/store/headphones" component={Headphones}></Route>
@@ -32,7 +32,7 @@ import Smartphones from './Smartphones/Smartphones';
                         <Route path="/store/smartphones" component={Smartphones}></Route>               
                         
                      
-                      </section>    
+                        
                     
             </div>
       </section>

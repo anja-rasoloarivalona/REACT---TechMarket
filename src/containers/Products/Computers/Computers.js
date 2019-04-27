@@ -1,12 +1,16 @@
 import React from 'react';
 import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
+import classes from './Computers.css';
 
 
 
 const computers = () => {
   return (
 
+    <React.Fragment>
+    <h1 className={classes.Title}>Our Computers</h1>
+    <section className={classes.List}>
     <ProductConsumer>
         { val => {
 
@@ -27,6 +31,8 @@ const computers = () => {
 
         }}
     </ProductConsumer>
+    </section>
+    </React.Fragment>
   )
 }
 
