@@ -1,9 +1,34 @@
-import React from 'react'
+import React from 'react';
+import {ProductConsumer} from '../../../context';
+import Product from '../../../components/Product/Product';
 
-export default function Computers() {
+
+
+const computers = () => {
   return (
-    <div>
-      hi from computers
-    </div>
+
+    <ProductConsumer>
+        { val => {
+
+            const {products} = val;
+            let tempProducts = [];
+
+            products.forEach(item => {
+                if(item.type === "computers") {
+                const singleItem = {...item};
+                tempProducts = [...tempProducts, singleItem]}
+           });
+
+            return tempProducts.map(item => {
+                return <Product 
+                        key = {item.id}
+                        product={item}/>
+            })
+
+        }}
+    </ProductConsumer>
   )
 }
+
+
+export default computers;
