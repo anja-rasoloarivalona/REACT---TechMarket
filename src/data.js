@@ -61,7 +61,7 @@ export const storeProducts = [
 
     {
         id: 5,
-        type: "Headset",
+        type: "wireless headphones",
         model: "Audio 355",
         brand: "Plantronics",
         color: "red",
@@ -93,7 +93,7 @@ export const storeProducts = [
         model: "Solo 3",
         brand: "JBL",
         color: "red",
-        img: "img/headphones/headphones-7.png",
+        img: "img/headphones/headphones-1.png",
         price: 167.67,    
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,

@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
-import {ProductConsumer} from '../../context';
-import Product from '../../components/Product/Product';
+import {Route, Switch} from 'react-router-dom';
 import classes from './Products.css';
+
 import Sidebar from '../../components/Sidebar/Sidebar';
+
+import Home from './Home/Home';
 import Headphones from './Headphones/Headphones';
+import Computers from './Computers/Computers';
+import TV from './TV/TV';
+import Smartphones from './Smartphones/Smartphones';
 
 
  class Products extends Component {
@@ -16,35 +21,19 @@ import Headphones from './Headphones/Headphones';
 
               <div className={classes.Products}>
                   <h1 className={classes.Title}>Our Headphones</h1>
-                  <section className={classes.List}>
-                  <ProductConsumer>
-                        {val => {
 
-                            const {searchedValue, products} = val;
-
-                            if (searchedValue !== "") { 
-
-                            let searchedProducts = products;
-                            searchedProducts = searchedProducts .filter(item => {
-                            return item.brand.toLowerCase().search(
-                              searchedValue.toLowerCase()) !== -1;
-                            });
-                            return searchedProducts.map(item => {
-                                      return <Product 
-                                          key={item.id}
-                                          product={item}/>
-                                })} 
-                              
-                              else {
-
-                                return (
-                                    <Headphones />
-                      
-                          )}
-                      }}
-                  </ProductConsumer>
-                </section>  
                 
+                      <section className={classes.List}>
+                     
+                        <Route exact path="/store" component={Home}></Route>
+                        <Route path="/store/headphones" component={Headphones}></Route>
+                        <Route path="/store/computers" component={Computers}></Route>
+                        <Route path="/store/tv" component={TV}></Route>
+                        <Route path="/store/smartphones" component={Smartphones}></Route>               
+                        
+                     
+                      </section>    
+                    
             </div>
       </section>
     )

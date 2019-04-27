@@ -21,10 +21,9 @@ class App extends Component {
       <Layout>
           <Navbar />
             <Switch>
-                <Route exact path="/" component={Products}></Route>
+                <Route path="/store" component={Products}></Route>
                 <Route path="/details" component={Details}></Route>
-                <Route path="/cart" component={Cart}></Route>
-              
+                <Route path="/cart" component={Cart}></Route>             
             </Switch>
       </Layout>
     );

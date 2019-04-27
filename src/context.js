@@ -16,8 +16,7 @@ const ProductContext = React.createContext();
          cartTax: 0,
          cartTotal: 0,
          cartItemCount: 0,
-         searchedValue: '',
-         searchedCategory: ''
+         searchedValue: ''
     };
 
     componentDidMount() {
@@ -38,19 +37,6 @@ const ProductContext = React.createContext();
       
     };
 
-    searchedCategoryHandler = (value) => {
-          let search = '';
-          search = value;
-
-          this.setState(() => {
-            return {searchedCategory: search}
-          })
-
-          console.log(this.state.searchedCategory);
-
-
-
-    }
 
     getItem = id => {
       const product = this.state.products.find(item => item.id === id);

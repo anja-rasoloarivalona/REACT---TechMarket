@@ -11,7 +11,7 @@ const navigation = () => {
   return (
         <nav className={classes.Nav}>
         
-        <Link to='/' className={classes.Link}>
+        <Link to="/store" className={classes.Link}>
                 <img src={logo} alt="logo img" className= {classes.Logo}/>          
         </Link>
 
@@ -19,7 +19,7 @@ const navigation = () => {
         
         <ul className={classes.List}>
             <li className={classes.Item}>
-                <Link to="/" className={classes.Link}>
+                <Link to="/store" className={classes.Link}>
                     Store
                 </Link>
             </li>

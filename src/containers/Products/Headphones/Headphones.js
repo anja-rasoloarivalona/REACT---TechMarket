@@ -3,6 +3,7 @@ import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
 
 
+
 const headphones = () => {
   return (
 
@@ -10,8 +11,15 @@ const headphones = () => {
         { val => {
 
             const {products} = val;
+            let tempProducts = [];
 
-            return products.map(item => {
+            products.forEach(item => {
+                if(item.type === "wireless headphones") {
+                const singleItem = {...item};
+                tempProducts = [...tempProducts, singleItem]}
+           });
+
+            return tempProducts.map(item => {
                 return <Product 
                         key = {item.id}
                         product={item}/>
