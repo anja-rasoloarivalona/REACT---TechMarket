@@ -1,11 +1,13 @@
 export const storeProducts = [
+
+    /* HEADPHONES ---------------------------------- */
     {
         id: 1,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Solo3",
         brand: "Beats",
         color: "red",
-        img: "img/product/product-1.png",
+        img: "img/headphones/headphones-1.png",
         price: 285.65,    
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -17,11 +19,11 @@ export const storeProducts = [
 
     {
         id: 2,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "ZX220BT",
         brand: "Sony",
         color: "black",
-        img: "img/product/product-3.png",
+        img: "img/headphones/headphones-3.png",
         price: 159.49,   
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -31,11 +33,11 @@ export const storeProducts = [
 
     {
         id: 3,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Solo3",
         brand: "Beats",
         color: "blue",
-        img: "img/product/product-2.png",
+        img: "img/headphones/headphones-2.png",
         price: 285.99,      
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -45,11 +47,11 @@ export const storeProducts = [
 
     {
         id: 4,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Studio 3",
         brand: "Beats",
         color: "grey",
-        img: "img/product/product-4.png",
+        img: "img/headphones/headphones-4.png",
         price: 231.59,       
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -63,7 +65,7 @@ export const storeProducts = [
         model: "Audio 355",
         brand: "Plantronics",
         color: "red",
-        img: "img/product/product-5.png",
+        img: "img/headphones/headphones-5.png",
         price: 247.76,      
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -73,11 +75,11 @@ export const storeProducts = [
 
     {
         id: 6,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Studio 4",
         brand: "Beats",
         color: "pink",
-        img: "img/product/product-6.png",
+        img: "img/headphones/headphones-6.png",
         price: 326.99,     
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -87,11 +89,11 @@ export const storeProducts = [
 
     {
         id: 7,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Solo 3",
         brand: "JBL",
         color: "red",
-        img: "img/product/product-7.png",
+        img: "img/headphones/headphones-7.png",
         price: 167.67,    
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -101,11 +103,11 @@ export const storeProducts = [
 
     {
         id: 8,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
         model: "Solo 3",
         brand: "Beats",
         color: "red",
-        img: "img/product/product-2.png",
+        img: "img/headphones/headphones-2.png",
         price: 158.59,      
         info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
         inCart: false,
@@ -115,7 +117,394 @@ export const storeProducts = [
 
     {
         id: 9,
-        type: "Wireless Headphones",
+        type: "wireless headphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/headphones/headphones-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+
+    /* COMPUTERS----------------------------------- */
+
+    {
+        id: 10,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 11,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 12,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 13,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 14,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 15,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 16,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 17,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 18,
+        type: "computers",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/computers/computers-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+
+    /*   SMARTPHONES ----------------------- */ 
+
+    {
+        id: 19,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 20,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 21,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 22,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 23,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 24,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 25,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 26,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 27,
+        type: "smartphones",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+
+    /* TV ---------------------------- */
+
+    {
+        id: 28,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 29,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 30,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 31,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 32,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 33,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 34,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 35,
+        type: "tv",
+        model: "Solo 3",
+        brand: "Beats",
+        color: "red",
+        img: "img/product/product-1.png",
+        price: 190.99,        
+        info: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam animi perspiciatis repellendus ipsam recusandae fugit facilis debitis quos fuga!",
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+
+    {
+        id: 36,
+        type: "tv",
         model: "Solo 3",
         brand: "Beats",
         color: "red",
@@ -126,6 +515,8 @@ export const storeProducts = [
         count: 0,
         total: 0
     }
+
+
 
 ];
 

@@ -17,11 +17,14 @@
     margin-bottom: 2rem;
 }
 
-.Link {
+.CategoryContainer {
+    list-style: none;
+}
+.Category {
     background: red;
     margin: .5rem;
     text-decoration: none;
-    width: 70%;
+    width: 100%;
     text-align: center;
     font-size: 1.3rem;
     line-height: 1.5;

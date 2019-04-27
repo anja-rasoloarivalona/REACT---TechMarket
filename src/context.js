@@ -16,7 +16,8 @@ const ProductContext = React.createContext();
          cartTax: 0,
          cartTotal: 0,
          cartItemCount: 0,
-         searchedValue: ''
+         searchedValue: '',
+         searchedCategory: ''
     };
 
     componentDidMount() {
@@ -36,6 +37,20 @@ const ProductContext = React.createContext();
         });
       
     };
+
+    searchedCategoryHandler = (value) => {
+          let search = '';
+          search = value;
+
+          this.setState(() => {
+            return {searchedCategory: search}
+          })
+
+          console.log(this.state.searchedCategory);
+
+
+
+    }
 
     getItem = id => {
       const product = this.state.products.find(item => item.id === id);
@@ -194,7 +209,8 @@ const ProductContext = React.createContext();
         decrement: this.decrement,
         removeItem: this.removeItem,
         clearCart: this.clearCart,
-        searchHandler: this.searchHandler
+        searchHandler: this.searchHandler,
+        searchedCategoryHandler: this.searchedCategoryHandler
 
         
       }}>

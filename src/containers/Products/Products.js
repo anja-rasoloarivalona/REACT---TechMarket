@@ -3,7 +3,6 @@ import {ProductConsumer} from '../../context';
 import Product from '../../components/Product/Product';
 import classes from './Products.css';
 import Sidebar from '../../components/Sidebar/Sidebar';
-import { Route, Switch} from 'react-router-dom';
 import Headphones from './Headphones/Headphones';
 
 
@@ -21,31 +20,25 @@ import Headphones from './Headphones/Headphones';
                   <ProductConsumer>
                         {val => {
 
-                        const {searchedValue, products} = val;
+                            const {searchedValue, products} = val;
 
-                        if (searchedValue !== "") { 
+                            if (searchedValue !== "") { 
 
-                        let searchedProducts = products;
-                        searchedProducts = searchedProducts .filter(item => {
-                        return item.brand.toLowerCase().search(
-                          searchedValue.toLowerCase()) !== -1;
-                        });
-                        return searchedProducts.map(item => {
-                                  return <Product 
-                                      key={item.id}
-                                      product={item}/>
-                            })} 
-                          
-                          else {
+                            let searchedProducts = products;
+                            searchedProducts = searchedProducts .filter(item => {
+                            return item.brand.toLowerCase().search(
+                              searchedValue.toLowerCase()) !== -1;
+                            });
+                            return searchedProducts.map(item => {
+                                      return <Product 
+                                          key={item.id}
+                                          product={item}/>
+                                })} 
+                              
+                              else {
 
-                        return (
-                        <Switch>
-                          <Route  path="/" component={Headphones} />
-                          <Route  path="/headphones" component={Headphones} />
-                          <Route  path="/tv" component={Headphones} />
-                          <Route  path="/computers" component={Headphones} />
-                          <Route  path="/smartphones" component={Headphones} />
-                        </Switch>
+                                return (
+                                    <Headphones />
                       
                           )}
                       }}

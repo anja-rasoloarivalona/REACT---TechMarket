@@ -21,10 +21,10 @@ class App extends Component {
       <Layout>
           <Navbar />
             <Switch>
-                <Route exact path="/" component={Products}/>
-                <Route path="/details" component={Details}/>
-                <Route path="/cart" component={Cart}/>
-                <Route Component={Default}/>
+                <Route exact path="/" component={Products}></Route>
+                <Route path="/details" component={Details}></Route>
+                <Route path="/cart" component={Cart}></Route>
+              
             </Switch>
       </Layout>
     );
@@ -32,3 +32,6 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+<Route component={Default}></Route> */
