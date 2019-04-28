@@ -2,13 +2,13 @@ import React from 'react';
 import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './TV.css';
-
+import Title from '../UI/Title/Title';
 
 
 const tv = () => {
   return (
   <React.Fragment>
-    <h1 className={classes.Title}>Our Tv</h1>
+    <Title title="tv"/>
     <section className={classes.List}>
     <ProductConsumer>
         { val => {

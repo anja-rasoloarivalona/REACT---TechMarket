@@ -2,13 +2,14 @@ import React from 'react';
 import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './Smartphones.css';
+import Title from '../UI/Title/Title';
 
 
 
 const smartphones = () => {
   return (
     <React.Fragment>
-    <h1 className={classes.Title}>Our Smartphones</h1>
+    <Title title="smartphones" />
 
     <section className={classes.List}>
     <ProductConsumer>

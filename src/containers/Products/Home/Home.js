@@ -2,12 +2,13 @@ import React from 'react';
 import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './Home.css';
+import Title from '../UI/Title/Title';
 
 const home = () => {
   return (
 
     <React.Fragment>
-    <h1 className={classes.Title}>Our Products</h1>
+    <Title title="Our products" />
     <section className={classes.List}>
         <ProductConsumer>  
 
