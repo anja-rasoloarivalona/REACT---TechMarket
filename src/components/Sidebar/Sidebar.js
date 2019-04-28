@@ -9,7 +9,7 @@ const sidebar = () => {
   return (
     
             <section className={classes.Sidebar}>
-                <h4 className={classes.Title}>Explore by Category</h4>
+                <h4 className={classes.Title}>Categories</h4>
                         <ul className={classes.CategoryContainer}>
 
                             <li>

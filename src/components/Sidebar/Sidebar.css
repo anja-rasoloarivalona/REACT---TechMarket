@@ -8,14 +8,14 @@
     align-items: center;
     border-right: 1px solid grey;
     margin-top: 1.5rem; 
-
+    width: 15rem;
     position: fixed;
    
 }
 
 .Title {
     padding: 1rem 2rem;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 2rem;
 }
 

@@ -9,7 +9,7 @@ class Details extends Component {
     return (
       <ProductConsumer>
         {(value) =>{
-          const { type, model, brand, img, info, price, inCart} = value.productsDetail;
+          const { id, type, model, brand, img, info, price, inCart} = value.productsDetail;
 
           return (
             <div className={classes.Container}>
@@ -33,14 +33,18 @@ class Details extends Component {
                     </div>
                     
                     <div className={classes.Cta}>
-                        <Link to='/' className={classes.Link}>
-                            <ButtonContainer className={classes.Button}>
+                        <Link to='/store' className={classes.Link}>
+                            <button className={classes.Button}>
                               Back
-                            </ButtonContainer>
+                            </button>
                         </Link>
-                        <ButtonContainer className={classes.Button}>
+                        <button className={classes.Button}
+                                disabled={inCart ? true : false}
+                                onClick={() => {
+                                  value.addToCart(id);
+                                }}>
                             Add to cart
-                        </ButtonContainer>
+                        </button>
                     </div>
                 </div>
             </div>

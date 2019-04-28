@@ -47,3 +47,20 @@
     text-decoration: none;
 }
 
+.Button {
+    padding: .8rem 1rem;
+    width: 9rem;
+    margin: 0 .5rem;
+    border: 1px solid grey;
+    outline: none;
+    background: var(--color-white);
+    color: grey;
+}
+
+.Button:hover {
+    background: #F5670F;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+
