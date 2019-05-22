@@ -19,21 +19,12 @@ import Smartphones from './Smartphones/Smartphones';
 
             <Sidebar />
 
-              <div className={classes.Products}>
-                  
-
-                
-                      
-                     
+              <div className={classes.Products}>                      
                         <Route exact path="/store" component={Home}></Route>
                         <Route path="/store/headphones" component={Headphones}></Route>
                         <Route path="/store/computers" component={Computers}></Route>
                         <Route path="/store/tv" component={TV}></Route>
-                        <Route path="/store/smartphones" component={Smartphones}></Route>               
-                        
-                     
-                        
-                    
+                        <Route path="/store/smartphones" component={Smartphones}></Route>                                
             </div>
       </section>
     )

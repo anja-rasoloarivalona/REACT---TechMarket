@@ -52,10 +52,6 @@ const headphones = () => {
             })
 
           }
-
-
-
-
         }}
     </ProductConsumer>
     </section>
