@@ -13,7 +13,8 @@ const headphones = () => {
     <ProductConsumer>
         { val => {
 
-            const {products} = val;
+            const {searchedValue, products} = val;
+
             let tempProducts = [];
 
             products.forEach(item => {
@@ -22,11 +23,38 @@ const headphones = () => {
                 tempProducts = [...tempProducts, singleItem]}
            });
 
+
+
+           let searchedProducts = [...tempProducts];
+
+           if (searchedValue !== "") {         
+            searchedProducts = searchedProducts.filter(item => {
+
+                return item.brand
+                        .toLowerCase()
+                        .search(searchedValue.toLowerCase()) !== -1;
+           
+            })
+
+
+            return searchedProducts.map(item => {
+                     return <Product 
+                          key={item.id}
+                          product={item} /> })
+
+
+          } else {
+
             return tempProducts.map(item => {
                 return <Product 
                         key = {item.id}
                         product={item}/>
             })
+
+          }
+
+
+
 
         }}
     </ProductConsumer>
