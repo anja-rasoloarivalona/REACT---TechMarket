@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import classes from './Products.css';
 
-import Sidebar from '../../components/Sidebar/Sidebar';
 
 import Home from './Home/Home';
 import Headphones from './Headphones/Headphones';
@@ -16,9 +15,6 @@ import Smartphones from './Smartphones/Smartphones';
 
     return (
       <section className={classes.Layout}>
-
-            <Sidebar />
-
               <div className={classes.Products}>                      
                         <Route exact path="/store" component={Home}></Route>
                         <Route path="/store/headphones" component={Headphones}></Route>
