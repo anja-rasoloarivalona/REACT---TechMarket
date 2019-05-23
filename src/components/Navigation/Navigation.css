@@ -18,32 +18,19 @@
     
 }
 
-.NavBot {
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 3rem;
-    background: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.LogoContainer {
+  display: flex;
+  font-size: 1.8rem;
 }
 
-
-.CategoryContainer {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
+.LogoText:first-child {
+    margin-right: .8rem;
 }
-    
 
-
-.Logo {
-  width: 80%;
-  object-fit: cover;
-
+.LogoText span:first-child {
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .List {
@@ -52,9 +39,7 @@
     justify-content: space-around;
     list-style: none;
     height: 100%;
-    width: 40%;
-  
-
+    width: 16%;
 }
 
 .Link {
@@ -62,7 +47,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-
+    color: var(--color-dark);
 }
 
 .Item {
@@ -72,7 +57,7 @@
 
 .Icon {
     margin-right: 1rem;
-    fill: black;
+    fill: var(--color-primary);
 }
 
 .Icon div svg {
@@ -92,6 +77,35 @@
     border-radius: 50%;
     background: red;
     color: white;
-    font-size: 1.3rem;
-    
+    font-size: 1.3rem;   
 }
+
+
+.NavLink {
+    color: var(--color-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.NavBot {
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 3rem;
+    background: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.CategoryContainer {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+   

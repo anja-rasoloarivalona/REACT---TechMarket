@@ -2,8 +2,10 @@
     --default-font: sans-serif;
 
 
+    --color-primary: rgb(95, 2, 80);
+    --color-dark : rgb(5, 2, 20);
     --color-white: #fff;
-    --color-primary: rgb(2, 58, 95);
+    
 }
 
 

@@ -1,5 +1,5 @@
 .Form {
-    width: 23%;
+    width: 33%;
     height: 58%;   
     position: relative;
    
@@ -12,8 +12,8 @@
     border: none;
     outline: none;
     padding-left: .8rem;
-    background: grey;
-
+    background: #e5dcdc;
+    color: var(--color-primary);
 }
 
 
@@ -21,7 +21,7 @@
     position: absolute;
     right: 0;
     top:0;
-    background: #F5670F;
+    background: var(--color-primary);
     height: 100%;
     width: 3rem;
     display: flex;

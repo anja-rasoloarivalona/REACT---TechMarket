@@ -3,7 +3,6 @@ import { NavLink, Link } from 'react-router-dom';
 import classes from './Navigation.css';
 import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
-import logo from '../../assets/img/logo.png';
 import {ProductConsumer} from '../../context';
 import NavForm from './NavForm/NavForm';
 
@@ -12,8 +11,18 @@ const navigation = () => {
         <nav className={classes.Nav}>
         
             <div className={classes.NavTop}>
-        <Link to="/store" className={classes.Link}>
-                    <img src={logo} alt="logo img" className= {classes.Logo}/>          
+
+            <Link to="/store" className={classes.Link}>
+                    <div className={classes.LogoContainer}>
+                        <div className={classes.LogoText}>
+                                <span>T</span>
+                                <span>ech</span>
+                        </div>
+                        <div className={classes.LogoText}>
+                                <span>M</span>
+                                <span>arket</span>
+                        </div>
+                    </div>       
             </Link>
 
             <NavForm />
@@ -22,11 +31,6 @@ const navigation = () => {
                 <li className={classes.Item}>
                     <Link to="/store" className={classes.Link}>
                         Store
-                    </Link>
-                </li>
-                <li className={classes.Item}>
-                    <Link to="/about" className={classes.Link}>
-                        About us
                     </Link>
                 </li>
                 <li className={classes.Item}>
@@ -53,22 +57,22 @@ const navigation = () => {
             <div className={classes.NavBot}>
                 <ul className={classes.CategoryContainer}>
                     <li>
-                        <NavLink to="/store/headphones" className={classes.Link}>
+                        <NavLink to="/store/headphones" className={classes.NavLink}>
                                             Headphones
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/store/computers" className={classes.Link}>
+                        <NavLink to="/store/computers" className={classes.NavLink}>
                                             Computers
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/store/tv" className={classes.Link}>
+                        <NavLink to="/store/tv" className={classes.NavLink}>
                                             TV
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/store/smartphones" className={classes.Link}>
+                        <NavLink to="/store/smartphones" className={classes.NavLink}>
                                             Smartphones
                         </NavLink>
                     </li>                                  
