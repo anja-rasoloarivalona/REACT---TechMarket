@@ -12,7 +12,7 @@ const navigation = () => {
         
             <div className={classes.NavTop}>
 
-            <Link to="/store" className={classes.Link}>
+            <Link to="/" className={classes.Link}>
                     <div className={classes.LogoContainer}>
                         <div className={classes.LogoText}>
                                 <span>T</span>

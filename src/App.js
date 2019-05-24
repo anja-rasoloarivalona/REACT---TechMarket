@@ -4,9 +4,11 @@ import './App.css';
 
 
 import Navbar from './components/Navigation/Navigation';
+
 import Products from './containers/Products/Products';
 import Details from './containers/Details/Details';
 import Cart from './containers/Cart/Cart';
+import Home from './containers/Home/Home';
 
 
 import Default from './components/Default';
@@ -21,6 +23,7 @@ class App extends Component {
       <Layout>
           <Navbar />
             <Switch>
+                <Route exact path="/" component={Home}></Route>
                 <Route path="/store" component={Products}></Route>
                 <Route path="/details" component={Details}></Route>
                 <Route path="/cart" component={Cart}></Route>             
