@@ -1,11 +1,12 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import background from '../../assets/img/beats.jpg';
 import classes from './Home.css';
 import Button from '../../components/Buttons/Button';
 
 import { ProductConsumer } from '../../context';
 import Product from '../../components/Product/Product';
+
 
 const home = () => {
     return (
@@ -57,6 +58,11 @@ const home = () => {
                         }}
                     </ProductConsumer>
                 </section>
+                
+                <Link to='/store/smartphones' className={classes.LatestLink}>
+                        VIEW MORE
+                </Link>
+                        
             </div>
         </React.Fragment>
     )

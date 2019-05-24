@@ -87,7 +87,7 @@
 }
 
 .Button:hover {
-    background: #F5670F;
+    background: var(--color-primary);
     border: none;
 }
 

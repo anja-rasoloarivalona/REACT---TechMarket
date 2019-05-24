@@ -39,10 +39,11 @@
 .Latest {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    height: 73vh;
+    height: calc(100vh - 8rem);
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .LatestTitle {
@@ -63,6 +64,31 @@
         justify-content: center;
         grid-gap: 4rem;
         margin-top: 2rem;
-        margin-bottom: 8rem;
-    
+        margin-bottom: 8rem;  
+}
+
+.LatestLink {
+    width: 12rem;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    text-decoration: none;
+    padding: 1rem 0rem;
+    position: relative;
+    font-size: 1.2rem;            
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif; 
+    transform: translateY(-100%);
+}
+
+
+.LatestLink:hover {
+    border: none;
+    background: var(--color-primary);
+    color: var(--color-white);
+
 }
