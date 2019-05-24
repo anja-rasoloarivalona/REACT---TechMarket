@@ -20,13 +20,16 @@ const home = () => {
                         <p>
                         Cum nos notissimus sane accitus consociatos quae foveis cum turmis nos agitabantur cerneret cogebatur has semper exhalaret foveis turmis occultis certamina bellicosus cum occultis emergentes sui subsidia sed nos abnuens.
                         </p>
-                        <Button />
+                        <Button buttonValue='Discover'
+                                path='/store/headphones'/>
                 </div>
                     
         
             </div>
             <div className={classes.Latest}>
-
+                <div className={classes.LatestTitle}>
+                    Latest products
+                </div>
             </div>
         </React.Fragment>
     )
