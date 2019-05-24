@@ -39,8 +39,9 @@ class ProductsList extends Component {
                                         .toLowerCase()
                                         .search(searchedValue.toLowerCase()) !== -1;
                             })
+                        
 
-                           if(searchedProducts.length > 1) {
+                           if(searchedProducts.length > 0) {
                                 return searchedProducts.map(item => {
                                     return <Product 
                                                 key={item.id}

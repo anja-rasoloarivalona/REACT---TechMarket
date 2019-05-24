@@ -23,19 +23,21 @@ export default class Home extends Component {
                         {val => {
                             const {searchedValue, products} = val;
                             let searchedProducts = [...products];
-        
+                            let tempProducts = [];
+
                             if (searchedValue !== "") {  
                                 
-                                
+                                   
+
                                     searchedProducts = searchedProducts.filter(item => {       
                                         return item.brand
                                             .toLowerCase()
                                             .search(searchedValue.toLowerCase()) !== -1;
-                            
                             })
-        
-                                return ( 
-                                
+
+                            if(searchedProducts.length > 0) {
+                               
+                                tempProducts =                              
                                     <React.Fragment>
                                             <Title title="Our products" />
                                             <section className={classes.Layout}>
@@ -51,14 +53,19 @@ export default class Home extends Component {
                                                     </section>
                                                 </div>
                                             </section>
-                                    </React.Fragment>
-
-                                )                                            
+                                    </React.Fragment>                                     
+                            } else {
+                                tempProducts = <section className={classes.Layout}>
+                                                <div className={classes.Products}>
+                                                   <div>Sorry no Product found</div>
+                                                </div>
+                                            </section>
                             }
+        
                             
-                            
-                            
-                            else {
+                            return tempProducts;
+
+                            } else {
 
                                 return (
                                 <React.Fragment>
