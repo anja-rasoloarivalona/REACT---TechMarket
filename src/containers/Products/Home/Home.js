@@ -8,37 +8,35 @@ const home = () => {
   return (
 
     <React.Fragment>
-    <Title title="Our products" />
-    <section className={classes.List}>
-        <ProductConsumer>  
+        <Title title="Our products" />
+        <section className={classes.List}>
+            <ProductConsumer>  
+                { val => {
+                    const {searchedValue, products} = val;
+                    let searchedProducts = [...products];
 
-        { val => {
-            const {searchedValue, products} = val;
-            let searchedProducts = [...products];
+                    if (searchedValue !== "") {         
+                        searchedProducts = searchedProducts.filter(item => {
 
-            if (searchedValue !== "") {         
-                searchedProducts = searchedProducts.filter(item => {
+                            return item.brand
+                                    .toLowerCase()
+                                    .search(searchedValue.toLowerCase()) !== -1;
+                    
+                        })
 
-                    return item.brand
-                            .toLowerCase()
-                            .search(searchedValue.toLowerCase()) !== -1;
-               
-                })
-
-                return searchedProducts.map(item => {
-                    return <Product 
-                                key={item.id}
-                                product={item} /> })
-                
-            
-                } else {
-                return searchedProducts.map(item => {
-                    return <Product 
-                                key={item.id}
-                                product={item} />
-                })
-            }
-
+                        return searchedProducts.map(item => {
+                            return <Product 
+                                        key={item.id}
+                                        product={item} /> })
+                        
+                    
+                        } else {
+                        return searchedProducts.map(item => {
+                            return <Product 
+                                        key={item.id}
+                                        product={item} />
+                        })
+                    }
         }}
     </ProductConsumer>
     </section>  

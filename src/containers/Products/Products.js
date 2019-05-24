@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import classes from './Products.css';
 
 
 import Home from './Home/Home';
-import Headphones from './Headphones/Headphones';
-import Computers from './Computers/Computers';
-import TV from './TV/TV';
-import Smartphones from './Smartphones/Smartphones';
+
+import Headphones from './ProdcutsContainer/Headphones';
+import Computers from './ProdcutsContainer/Computers';
+import TV from './ProdcutsContainer/TV';
+import Smartphones from './ProdcutsContainer/Smartphones';
 
 
  class Products extends Component {
