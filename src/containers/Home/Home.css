@@ -39,12 +39,30 @@
 .Latest {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-
-    background: yellow;
-    height: 50vh;
-
+    height: 73vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+.LatestTitle {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-wprimary);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.LatestList { 
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 30rem);
+        grid-template-rows: repeat(auto-fit, 40rem);
+        grid-auto-rows: 40rem;
+        justify-content: center;
+        grid-gap: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+    
+}

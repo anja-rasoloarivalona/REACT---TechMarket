@@ -4,6 +4,9 @@ import background from '../../assets/img/beats.jpg';
 import classes from './Home.css';
 import Button from '../../components/Buttons/Button';
 
+import { ProductConsumer } from '../../context';
+import Product from '../../components/Product/Product';
+
 const home = () => {
     return (
 
@@ -26,10 +29,34 @@ const home = () => {
                     
         
             </div>
+
             <div className={classes.Latest}>
                 <div className={classes.LatestTitle}>
                     Latest products
                 </div>
+                <section className={classes.LatestList}>
+                    <ProductConsumer>
+                        {val => {
+                                const {products} = val;
+                                let tempProducts = [];
+
+                                products.forEach(item => {
+                                    if(item.type === "smartphones") {
+                                    const singleItem = {...item};
+                                    tempProducts = [...tempProducts, singleItem]}
+                                });
+
+                                let prod = tempProducts.slice(0, 3)
+
+                                return prod.map(item => {
+                                    return <Product 
+                                            key = {item.id}
+                                            product={item}/>
+                                })
+
+                        }}
+                    </ProductConsumer>
+                </section>
             </div>
         </React.Fragment>
     )
