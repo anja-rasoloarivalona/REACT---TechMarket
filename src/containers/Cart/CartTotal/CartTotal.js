@@ -1,8 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import classes from './CartTotal.css';
+import Paypal from '../PaypalButton/PaypalButton';
 
-const cartTotal = ({value}) => {
+const cartTotal = ({value, history}) => {
 
     const {cartSubtotal, cartTax, cartTotal, clearCart} = value;
         return (
@@ -36,9 +37,10 @@ const cartTotal = ({value}) => {
                         </button>
                     </Link>
 
-                    <button className={classes.Button}>
-                            Purchase
-                    </button>
+                    <Paypal
+                        total={cartTotal} 
+                        clearCart={clearCart} 
+                        history={history} />
             </section>
 
                 

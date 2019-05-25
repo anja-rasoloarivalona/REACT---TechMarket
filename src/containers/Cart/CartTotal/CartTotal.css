@@ -5,7 +5,7 @@
     margin-top: 2rem;
     margin-left: 4rem;
     border: .5px solid rgb(212, 211, 211);
-    height: 20rem;
+    height: 25rem;
     transform: translateY(13%);
 
 }
@@ -46,20 +46,25 @@
 
 .CTA {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .CTA a {
     text-decoration: none;
 }
 
+
+
 .Button {
-    margin: 0 .8rem;
+    margin: 1.2rem .8rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     border: .5px solid rgb(212, 211, 211);
-    padding: 1rem 1.8rem;
+    padding: .6rem 1.8rem;
     background: transparent;
 }
 

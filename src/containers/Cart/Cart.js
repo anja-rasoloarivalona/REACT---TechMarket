@@ -29,7 +29,7 @@ import { Link } from 'react-router-dom';
                 return (
                   <React.Fragment>
                     <CartItems value={value}/>
-                    <CartTotals value={value} />
+                    <CartTotals value={value} history={this.props.history} />
                   </React.Fragment>
                 );
 
