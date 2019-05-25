@@ -85,7 +85,7 @@ const footer = ()=>  {
       <div className={classes.FooterItem}>
           <div className={classes.TitleContainer}>
               <div className={classes.Title}>
-                  Have a questions?
+                  Have a question?
               </div>
           </div>
           <div className={classes.QuestionList}>

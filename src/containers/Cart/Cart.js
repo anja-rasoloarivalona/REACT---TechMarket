@@ -4,6 +4,10 @@ import classes from './Cart.css';
 import CartItems from '../Cart/CartItems/CartItems';
 import CartTotals from './CartTotal/CartTotal';
 
+import ReactSVG from 'react-svg';
+import cartIcon from '../../assets/icon/SVG/cart.svg';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -25,7 +29,23 @@ import CartTotals from './CartTotal/CartTotal';
                 );
 
               } else {
-                return <h1>Your cart is empty</h1>
+                return (
+
+                  <div className={classes.EmptyCart}>
+                      <ReactSVG src={cartIcon} alt="Icon" className={classes.Icon}/>
+                      <div className={classes.Title}>Your cart is currently empty</div>
+                      <div className={classes.Text}>
+                        <div>Before proceed to checkout you must add some products to your shopping cart</div>
+                        <div>You will find a lot of interesting prodcuts on our "Store" page.</div>
+                      </div>
+                      
+                      
+                      <Link to="/store" className={classes.Link}>
+                          Return to store
+                      </Link>
+                  </div>
+                )
+                  
               }
 
 
