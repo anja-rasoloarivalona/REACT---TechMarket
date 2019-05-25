@@ -5,6 +5,9 @@ import classes from './Details.css';
 import ButtonContainer from '../../components/Buttons/Button';
 
 class Details extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
   render() {
     return (
       <ProductConsumer>
@@ -18,15 +21,17 @@ class Details extends Component {
                 </div>
          
                 <div className={classes.Details}>
+                  <div className={classes.TitleContainer}>
                     <h1 className={classes.Title}> {brand}</h1>
                     <h1 className={classes.Title}> {model}</h1>
+                  </div>
+                    
                     
                     <h4 className={classes.Price}>
                       price: ${price}
                     </h4>
 
                     <div className={classes.InfoContainer}> 
-                      {type}
                         <p className={classes.Info}>
                           {info}
                         </p>
@@ -38,12 +43,15 @@ class Details extends Component {
                               Back
                             </button>
                         </Link>
+
                         <button className={classes.Button}
                                 disabled={inCart ? true : false}
                                 onClick={() => {
                                   value.addToCart(id);
                                 }}>
-                            Add to cart
+                            <span className={classes.ButtonText} disabled>
+                                  {inCart ? 'In Cart' : 'Add to cart' }
+                          </span>
                         </button>
                     </div>
                 </div>
