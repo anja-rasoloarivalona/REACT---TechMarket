@@ -8,13 +8,12 @@ import Product from '../../components/Product/Product';
 import Title from '../Products/UI/Title/Title';
 
 
-
-
-
-
-
-
 export default class Home extends Component {
+
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
+
     render() {
         return (
             <React.Fragment>
