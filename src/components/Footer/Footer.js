@@ -3,6 +3,8 @@ import classes from './Footer.css';
 import ReactSVG from 'react-svg';
 import { NavLink } from 'react-router-dom';
 
+import background from '../../assets/img/footer.jpeg';
+
 import facebook from '../../assets/icon/SVG/facebook.svg';
 import instagram from '../../assets/icon/SVG/instagram.svg';
 import twitter from '../../assets/icon/SVG/twitter.svg';
@@ -13,9 +15,11 @@ import phone from '../../assets/icon/SVG/phone.svg';
 
 const footer = ()=>  {
   return (
-    <div className={classes.Footer}>
-
-
+    <div className={classes.Footer}
+    style={{backgroundImage: "linear-gradient(rgba(5, 2, 20, 0.99),rgba(5, 2, 20, 0.95)), url(" + background + ")",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"}}>
       <div className={classes.FooterItem}>
 
           <div className={classes.TitleContainer}>
@@ -39,22 +43,24 @@ const footer = ()=>  {
 
       <div className={classes.FooterItem}>
             <div className={classes.TitleContainer}>
-                Menu
+              <div className={classes.Title}>
+                  Menu
+              </div>
             </div>
             <ul className={classes.MenuList}>
-                <NavLink to='/'>
+                <NavLink to='/' className={classes.MenuItem}>
                     Tech Market
                 </NavLink>
-                <NavLink to='/store/headphones'>
+                <NavLink to='/store/headphones' className={classes.MenuItem}>
                     Headphones
                 </NavLink>
-                <NavLink to='/store/computers'>
+                <NavLink to='/store/computers' className={classes.MenuItem}>
                     Computers
                 </NavLink>
-                <NavLink to='/store/tv'>
+                <NavLink to='/store/tv' className={classes.MenuItem}>
                     TV
                 </NavLink>
-                <NavLink to='/store/smartphones'>
+                <NavLink to='/store/smartphones' className={classes.MenuItem}>
                     Smartphones
                 </NavLink>
             </ul>
@@ -62,7 +68,9 @@ const footer = ()=>  {
 
       <div className={classes.FooterItem}>
           <div className={classes.TitleContainer}>
-                Help
+              <div className={classes.Title}>
+                  Help
+              </div>
           </div>
           <div className={classes.HelpList}>
               <div className={classes.HelpItem}>Shipping information</div>
@@ -76,14 +84,32 @@ const footer = ()=>  {
 
       <div className={classes.FooterItem}>
           <div className={classes.TitleContainer}>
-                Have a questions?
+              <div className={classes.Title}>
+                  Have a questions?
+              </div>
           </div>
           <div className={classes.QuestionList}>
+
             <div className={classes.QuestionItem}>
                   <ReactSVG src={location} alt="Icon" className={classes.QuestionIcon}/>
-                  <ReactSVG src={mail} alt="Icon" className={classes.QuestionIcon}/>
-                  <ReactSVG src={phone} alt="Icon" className={classes.QuestionIcon}/>
+                  <div>
+                    999 Fake Street, QC, Canada
+                  </div>  
             </div>
+            <div className={classes.QuestionItem}>
+            <ReactSVG src={mail} alt="Icon" className={classes.QuestionIcon}/>
+                  <div>
+                    +1 514 1234 123
+                  </div>  
+            </div>
+            <div className={classes.QuestionItem}>
+            <ReactSVG src={phone} alt="Icon" className={classes.QuestionIcon}/>
+                  <div>
+                    techmarket@yourmail.test
+                  </div>  
+            </div>
+            
+                  
           </div>
       </div>
 
