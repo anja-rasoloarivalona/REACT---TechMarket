@@ -1,5 +1,6 @@
 import React from 'react';
 import classes from './Footer.css';
+import ReactSVG from 'react-svg';
 
 const footer = ()=>  {
   return (
@@ -18,7 +19,9 @@ const footer = ()=>  {
               </div>
           </div>
           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-          <div className={classes.SocialMedia}></div>
+          <div className={classes.SocialMedia}>
+
+          </div>
       </div>
 
 

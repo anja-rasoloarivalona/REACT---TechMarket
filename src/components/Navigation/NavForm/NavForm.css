@@ -29,6 +29,12 @@
     justify-content: center;
     fill: var(--color-white);
     cursor: pointer;
-    
 
+   
+}
+
+.Icon div svg {
+    height: 1.6rem;
+    width: 1.6rem;
+    object-fit: cover;
 }

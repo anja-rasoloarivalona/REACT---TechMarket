@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
-import magnifyingGlass from '../../assets/icon/SVG/magnifying-glass.svg';
+
 
  class Product extends Component {
   render() {

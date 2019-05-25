@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {ProductConsumer} from '../../../context';
 import classes from './NavForm.css';
 import ReactSVG from 'react-svg';
-import glass from '../../../assets/icon/SVG/magnifying-glass.svg';
+import glass from '../../../assets/icon/SVG/search.svg';
 
 class NavForm extends Component {
   render() {
