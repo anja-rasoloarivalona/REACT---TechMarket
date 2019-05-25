@@ -4,6 +4,8 @@ import './App.css';
 
 
 import Navbar from './components/Navigation/Navigation';
+import Footer from './components/Footer/Footer';
+
 
 import Products from './containers/Products/Products';
 import Details from './containers/Details/Details';
@@ -28,6 +30,7 @@ class App extends Component {
                 <Route path="/details" component={Details}></Route>
                 <Route path="/cart" component={Cart}></Route>             
             </Switch>
+          <Footer />
       </Layout>
     );
   }

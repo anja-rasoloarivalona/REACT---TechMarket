@@ -69,6 +69,7 @@ export default class Home extends Component {
 
                                 return (
                                 <React.Fragment>
+                                    <section className={classes.Layout}>
                                     <div className={classes.Home}
                                         style={{backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(" + background + ")",
                                         backgroundPosition: "center",
@@ -116,7 +117,8 @@ export default class Home extends Component {
                                         <Link to='/store/smartphones' className={classes.LatestLink}>
                                             VIEW MORE
                                         </Link>                      
-                                    </div>
+                                        </div>
+                                    </section>
                                 </React.Fragment>
                                 )                              
                         }         

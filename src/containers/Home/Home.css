@@ -13,7 +13,7 @@
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr 85vw 1fr;
-    grid-template-rows: 2rem max-content;
+    grid-template-rows:  max-content;
 }
 
 .Products {
