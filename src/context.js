@@ -82,8 +82,10 @@ const ProductContext = React.createContext();
     }
 
     addTotals = () => {
-      let subTotal = 0;
-      this.state.cart.map(item => (subTotal += item.total));
+      let tempSubTotal = 0;
+      this.state.cart.map(item => (tempSubTotal += item.total));
+
+      let subTotal = parseFloat(tempSubTotal.toFixed(2));
 
       const tempTax = subTotal * .15;
       const tax = parseFloat(tempTax.toFixed(2));

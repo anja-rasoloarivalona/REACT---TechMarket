@@ -30,7 +30,7 @@ const cartTotal = ({value}) => {
 
 
             <section className={classes.CTA}>
-                    <Link to='/'>
+                    <Link to='/store'>
                         <button className={classes.Button} onClick={()=>clearCart()}>
                             Clear Cart
                         </button>
