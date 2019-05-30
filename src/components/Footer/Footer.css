@@ -1,6 +1,6 @@
 .Footer {
     height: calc(100vh - 8rem);
-    background: var(--color-dark);
+    
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     color: var(--color-white);
@@ -9,18 +9,46 @@
     justify-content: center;
 }
 
-.FooterItem {
-    width: 18vw;
-    height: 40vh;
-    margin: 0 3rem;
+@media screen and (max-width: 966px) {
+    .Footer  {
+      
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        padding: 3rem 6rem;
+    }
 }
+
+.FooterItem {
+        width: 18vw;
+        height: 40vh;
+        margin: 0 3rem;
+}
+
+
+
+
 
 .TitleContainer {
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
 
+@media screen and (max-width: 966px) {
+    .FooterItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 80%;
+        margin: 0;
+    }    
 }
 
 .Title {
@@ -40,6 +68,17 @@
     width: 90%;
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 966px) {
+    .FooterItem p {
+        text-align: center;
+        width: 80%;
+
+    }    
+}
+
+
+
 
 .SocialMedia {
     display: flex;
@@ -107,4 +146,39 @@
     width: 2rem;
     height: 2rem;
     object-fit: cover;
+}
+
+
+@media screen and (max-width: 660px) {
+    .Footer  {
+      
+        grid-template-rows: repeat(3, 1fr);
+        padding: 3rem 6rem;
+
+    }
+
+
+    .Footer .FooterItem:first-child {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+    }
+
+    .Footer .FooterItem:last-child {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+    }
+
+    .Footer .FooterItem:nth-child(2) {
+        transform: translateY(-1.2rem)
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .Footer  {
+      
+        display: flex;
+        flex-direction: column;
+    }
+
 }
