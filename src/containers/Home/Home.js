@@ -10,9 +10,27 @@ import Title from '../Products/UI/Title/Title';
 
 export default class Home extends Component {
 
+    state = {
+        sliceCount : 3
+    }
+
+    updateCount() {
+        if(window.innerWidth < 1150) {
+            this.setState({sliceCount: 4})
+        } else {
+            this.setState({sliceCount: 3})
+        }
+    }
+
 
     componentDidMount() {
         window.scrollTo(0, 0);
+        this.updateCount();
+        window.addEventListener('resize', this.updateCount.bind(this))
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.updateCount.bind(this))
     }
 
   
@@ -109,7 +127,7 @@ export default class Home extends Component {
 
                                                        
 
-                                                        let prod = tempProducts.slice(0, 3)
+                                                        let prod = tempProducts.slice(0, this.state.sliceCount)
 
                                                         return prod.map(item => {
                                                             return <Product 
