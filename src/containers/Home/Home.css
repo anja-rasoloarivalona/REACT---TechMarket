@@ -72,6 +72,13 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1150px) {
+    .Latest {
+        height: 100%;
+    }
+  }
+
+
 .LatestTitle {
     font-size: 2rem;
     text-transform: uppercase;

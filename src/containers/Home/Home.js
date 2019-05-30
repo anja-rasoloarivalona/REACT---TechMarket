@@ -10,9 +10,12 @@ import Title from '../Products/UI/Title/Title';
 
 export default class Home extends Component {
 
+
     componentDidMount() {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     }
+
+  
 
     render() {
         return (
@@ -94,12 +97,17 @@ export default class Home extends Component {
                                                     {val => {
                                                         const {products} = val;
                                                         let tempProducts = [];
+                                                      
 
                                                         products.forEach(item => {
                                                             if(item.type === "smartphones") {
                                                             const singleItem = {...item};
                                                             tempProducts = [...tempProducts, singleItem]}
                                                         });
+
+
+
+                                                       
 
                                                         let prod = tempProducts.slice(0, 3)
 
