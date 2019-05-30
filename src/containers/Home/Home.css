@@ -54,11 +54,28 @@
     margin-bottom: 3rem;
 }
 
+@media screen and (max-width: 438px) {
+    .HomeText div:first-child {
+        font-size: 1.4rem;
+    }
+
+    .HomeText div:nth-child(2) {
+        font-size: 3rem;
+    }
+}
+
 .HomeText p {
     width: 40%;
     line-height: 1.3;
     font-size: 1.5rem;
     margin-bottom: 3rem;
+}
+
+
+@media screen and (max-width: 699px) {
+    .HomeText p {
+        width: 80%;
+    }
 }
 
 
