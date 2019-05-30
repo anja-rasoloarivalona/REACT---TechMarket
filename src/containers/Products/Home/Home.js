@@ -3,6 +3,7 @@ import {ProductConsumer} from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './Home.css';
 import Title from '../UI/Title/Title';
+import ProductNotFound from '../ProductNotFound/ProductNotFound';
 
 const home = () => {
   return (
@@ -45,14 +46,24 @@ const home = () => {
                     
                         })
 
-                        return searchedProducts.map(item => {
-                            return <Product 
-                                        key={item.id}
-                                        product={item} /> })
+
+
+                        if(searchedProducts.length > 0) {
+                                return searchedProducts.map(item => {
+                                    return <Product 
+                                                key={item.id}
+                                                product={item}/>
+                                })
+                           } else {
+                               return <ProductNotFound />
+                           }
                         
                     
-                        } else {
-                        return searchedProducts.map(item => {
+                        
+                        } 
+                        
+                        else {
+                            return searchedProducts.map(item => {
                             return <Product 
                                         key={item.id}
                                         product={item} />
