@@ -18,9 +18,30 @@ const home = () => {
                     if (searchedValue !== "") {         
                         searchedProducts = searchedProducts.filter(item => {
 
-                            return item.brand
+                            if( item.brand
+                                .toLowerCase()
+                                .search(searchedValue.toLowerCase()) !== -1) {
+                            return item
+
+                        } else {
+
+                        }  if( item.type
+                            .toLowerCase()
+                            .search(searchedValue.toLowerCase()) !== -1) {
+                                return item     
+                            } else {
+                                if( item.model
                                     .toLowerCase()
-                                    .search(searchedValue.toLowerCase()) !== -1;
+                                    .search(searchedValue.toLowerCase()) !== -1) {
+                                        return item     
+                                    } else {
+                                        if( item.color
+                                            .toLowerCase()
+                                            .search(searchedValue.toLowerCase()) !== -1) {
+                                                return item     
+                                            }
+                                    }
+                            }
                     
                         })
 
