@@ -26,7 +26,14 @@
     align-items: center;
     justify-content: center;
     transform: translateX(-3.5%);
+    background: red;
 }
+
+@media screen and (max-width: 970px) {
+    .EmptyCart {
+        transform: translateX(0%);
+    }
+  }
 
 .Icon div svg {
     height: 9rem;
@@ -43,12 +50,25 @@
     color: var(--color-primary);
 }
 
+@media screen and (max-width: 513px) {
+    .Title {
+        font-size: 2rem;
+    }
+}
+
 .Text {
     text-align: center;
     font-size: 1.3rem;
     line-height: 1.3;
     margin-bottom: 4rem;
     color: var(--color-dark);
+    background: blue;
+}
+
+@media screen and (max-width: 468px) {
+    .Text {
+        width: 70vw;
+    }
 }
 
 .Link {
