@@ -6,6 +6,7 @@ import Button from '../../components/Buttons/Button';
 import { ProductConsumer } from '../../context';
 import Product from '../../components/Product/Product';
 import Title from '../Products/UI/Title/Title';
+import ProductNotFound from '../Products/ProductNotFound/ProductNotFound';
 
 
 export default class Home extends Component {
@@ -77,7 +78,7 @@ export default class Home extends Component {
                             } else {
                                 tempProducts = <section className={classes.Layout}>
                                                 <div className={classes.Products}>
-                                                   <div>Sorry no Product found</div>
+                                                        <ProductNotFound />
                                                 </div>
                                             </section>
                             }
