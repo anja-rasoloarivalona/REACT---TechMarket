@@ -14,10 +14,35 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 823px) {
+    .ImgContainer  {
+        width: 40vw;
+    }
+
+    .Container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 577px) {
+
+    .Container {
+        justify-content: center;
+        flex-direction: column;
+       
+    }
+
+    .ImgContainer  {
+        width: 70vw;
+    }
+}
+
 .Img {
     width: 50%;
     object-fit: cover;
 }
+
+
 
 .Details {
     width: 30vw;
@@ -25,6 +50,21 @@
     flex-direction: column;
     justify-content: center;
     height: 90%;
+}
+
+@media screen and (max-width: 823px) {
+
+    .Details {
+        width: 50vw;
+    }
+}
+
+
+@media screen and (max-width: 577px) {
+
+    .Details {
+        height: 40%;
+    }
 }
 
 .TitleContainer {
@@ -54,9 +94,17 @@
     display: flex;
 }
 
+
 .Link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 748px) {
+    .Link  {
+        margin-right: 2rem;
+    }
+}
+
 
 .Button {
     padding: .8rem 1rem;
@@ -68,10 +116,39 @@
     color: grey;
 }
 
+@media screen and (max-width: 748px) {
+    .Link  {
+        margin-right: 2rem;
+    }
+
+    .Button {
+        width: 12rem
+    }
+}
+
 .Button:hover {
     background: var(--color-primary);
     color: var(--color-white);
     border: none;
     cursor: pointer;
+}
+
+@media screen and (max-width: 451px) {
+    .Cta {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Link {
+        margin-bottom: 3rem;
+    }
+
+    .Details {
+        width: 80vw;
+    }
+
+    
+
 }
 
