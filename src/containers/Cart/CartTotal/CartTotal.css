@@ -7,7 +7,22 @@
     border: .5px solid rgb(212, 211, 211);
     height: 25rem;
     transform: translateY(13%);
+}
 
+@media screen and (max-width: 1250px) {
+
+    .Total {
+      transform: translateY(0);
+      width: 50vw;
+      margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 508px) {
+
+    .Total {
+      width: 60vw;
+    }
 }
 
 .Title {

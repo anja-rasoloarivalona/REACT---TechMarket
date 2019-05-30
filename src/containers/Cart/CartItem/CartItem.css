@@ -11,6 +11,21 @@
     margin-top: 2rem;
 }
 
+
+@media screen and (max-width: 1250px) {
+    .Item {
+      width: 80vw;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .Item {
+      width: 90vw;
+    }
+}
+
+
+
 .ImgContainer {
     width: 9rem;
     height: 9rem;
@@ -84,4 +99,50 @@
 .RemoveButton {
     cursor: pointer;
     fill: #E5DCDC;
+}
+
+
+@media screen and (max-width: 826px) {
+    .Item {
+        grid-template-columns: repeat(3, 1fr) ;
+        margin: 2rem 0;
+        border-bottom: 1px solid var(--color-primary);
+
+        
+    }
+
+    .ImgContainer {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .Title {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding-left: 0;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+
+    .Price {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .Total {
+        grid-column: 3 /4;
+        grid-row: 1 / 2;
+    }
+
+    .Control {
+        grid-column: 2/ 3;
+        grid-row: 2 / 3;
+    }
+
+    .Remove {
+        grid-column: 3 /4;
+        grid-row: 2 / 3;
+    }
+
 }
