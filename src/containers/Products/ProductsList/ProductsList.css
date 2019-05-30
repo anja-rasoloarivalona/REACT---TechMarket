@@ -1,5 +1,6 @@
 .List {
     width: 100%;
+    min-height: calc(100vh - 24rem);
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
     grid-template-rows: repeat(auto-fit, 40rem);

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ProductConsumer } from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './ProductsList.css';
+import ProductNotFound from '../ProductNotFound/ProductNotFound';
 
 
 class ProductsList extends Component {
@@ -71,7 +72,7 @@ class ProductsList extends Component {
                                                 product={item}/>
                                 })
                            } else {
-                               return <div>Sorry, no results found</div>
+                               return <ProductNotFound />
                            }
                             
 
