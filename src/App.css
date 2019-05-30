@@ -24,3 +24,9 @@ body {
     box-sizing: border-box;
     font-family: var(--default-font);
 }
+
+@media screen and (max-width: 731px) {
+    html {
+        font-size: 55%;
+    }
+  }

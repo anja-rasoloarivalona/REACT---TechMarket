@@ -4,6 +4,7 @@ import './App.css';
 
 
 import Navbar from './components/Navigation/Navigation';
+import Sidedrawer from './components/Navigation/SideDrawer/SideDrawer';
 import Footer from './components/Footer/Footer';
 
 
@@ -24,6 +25,7 @@ class App extends Component {
 
       <Layout>
           <Navbar />
+          <Sidedrawer />
             <Switch>
                 <Route exact path="/" component={Home}></Route>
                 <Route path="/store" component={Products}></Route>

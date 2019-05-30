@@ -1,9 +1,15 @@
 .Form {
     width: 33%;
     height: 58%;   
-    position: relative;
-   
+    position: relative;  
 }
+
+@media screen and (max-width: 397px) {
+    .Form {
+      transform: translateX(3rem);
+      width: 40%;
+    }
+  }
 
 .Input { 
     width: 100%;

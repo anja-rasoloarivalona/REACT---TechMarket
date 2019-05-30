@@ -8,7 +8,8 @@ class NavForm extends Component {
   render() {
     return (
 
-    <form className={classes.Form}>
+    <form className={classes.Form}
+          style={{width: this.props.width}}>
             <ProductConsumer>
                 {value => (
                     <input type="text"
