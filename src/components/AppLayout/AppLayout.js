@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './LayoutStore.css';
+import classes from './AppLayout.css';
 
-const layoutStore = (props) => {
+const layout = (props) => {
   return (
     <div className={classes.Layout}>
         {props.children}
@@ -9,4 +9,4 @@ const layoutStore = (props) => {
   )
 }
 
-export default layoutStore
+export default layout

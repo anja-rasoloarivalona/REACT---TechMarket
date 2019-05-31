@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {ProductConsumer} from '../../context';
 import classes from './Cart.css';
-import CartItems from '../Cart/CartItems/CartItems';
+import CartItems from './CartItems/CartItems';
 import CartTotals from './CartTotal/CartTotal';
 
 import ReactSVG from 'react-svg';

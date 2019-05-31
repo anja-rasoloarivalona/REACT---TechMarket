@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import classes from './Products.css';
 
 
-import Home from './Home/Home';
+import Home from './ProductsHome/ProductsHome';
 
 import Headphones from './ProdcutsContainer/Headphones';
 import Computers from './ProdcutsContainer/Computers';

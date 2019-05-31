@@ -8,22 +8,21 @@ import Sidedrawer from './components/Navigation/SideDrawer/SideDrawer';
 import Footer from './components/Footer/Footer';
 
 
-import Products from './containers/Products/Products';
-import Details from './containers/Details/Details';
-import Cart from './containers/Cart/Cart';
-import Home from './containers/Home/Home';
+import Products from './pages/Products/Products';
+import Details from './pages/Details/Details';
+import Cart from './pages/Cart/Cart';
+import Home from './pages/Home/Home';
 
 
-import Default from './components/Default';
 
-import Layout from './components/Layout/Layout';
+import AppLayout from './components/AppLayout/AppLayout';
 
 
 class App extends Component {
   render() {
     return (
 
-      <Layout>
+      <AppLayout>
           <Navbar />
           <Sidedrawer />
             <Switch>
@@ -33,7 +32,7 @@ class App extends Component {
                 <Route path="/cart" component={Cart}></Route>             
             </Switch>
           <Footer />
-      </Layout>
+      </AppLayout>
     );
   }
 }
