@@ -3,7 +3,7 @@ import {Route} from 'react-router-dom';
 import classes from './Products.css';
 
 
-import Home from './ProductsHome/ProductsHome';
+import ProductsHome from './ProductsHome/ProductsHome';
 
 import Headphones from './ProdcutsContainer/Headphones';
 import Computers from './ProdcutsContainer/Computers';
@@ -17,7 +17,7 @@ import Smartphones from './ProdcutsContainer/Smartphones';
     return (
       <section className={classes.Layout}>
               <div className={classes.Products}>                      
-                        <Route exact path="/store" component={Home}></Route>
+                        <Route exact path="/store" component={ProductsHome}></Route>
                         <Route path="/store/headphones" component={Headphones}></Route>
                         <Route path="/store/computers" component={Computers}></Route>
                         <Route path="/store/tv" component={TV}></Route>

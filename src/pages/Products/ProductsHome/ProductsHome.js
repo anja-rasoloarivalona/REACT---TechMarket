@@ -10,8 +10,6 @@ const home = () => {
     <React.Fragment>
       <Title title="Our products" />
       <section className={classes.List}>
-
-        
         <ProductConsumer>
           {val => {
             const { searchedValue, products } = val;
@@ -59,12 +57,7 @@ const home = () => {
               } else {
                 return <ProductNotFound />;
               }
-            }
-            
-            
-            
-            
-            else {
+            } else {
               return searchedProducts.map(item => {
                 return <Product key={item.id} product={item} />;
               });
