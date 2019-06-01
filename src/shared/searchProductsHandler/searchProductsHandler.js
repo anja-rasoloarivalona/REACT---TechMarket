@@ -1,50 +1,50 @@
+import { ProductConsumer } from "../../context";
 import React from "react";
-import classes from "./ProductsHome.css";
-import { ProductConsumer } from "../../../context";
-import Product from "../../../components/Product/Product";
-import Title from "../../../components/Title/Title";
-import ProductNotFound from "../ProductNotFound/ProductNotFound";
+import classes from './searchProductsHandler.css';
+import Title from '../../components/Title/Title';
+import ProductNotFound from '../../pages/Products/ProductNotFound/ProductNotFound';
+import Product from '../../components/Product/Product';
 
-const home = () => {
+
+
+
+
+export function searchProductsHandler (searchValue) {
   return (
     <React.Fragment>
       <Title title="Our products" />
       <section className={classes.List}>
-
-        
         <ProductConsumer>
           {val => {
-            const { searchedValue, products } = val;
+            const { products } = val;
             let searchedProducts = [...products];
 
-            if (searchedValue !== "") {
+            if (searchValue !== "") {
               searchedProducts = searchedProducts.filter(item => {
                 if (
-                  item.brand
-                    .toLowerCase()
-                    .search(searchedValue.toLowerCase()) !== -1
+                  item.brand.toLowerCase().search(searchValue.toLowerCase()) !==
+                  -1
                 ) {
                   return item;
                 } else {
                 }
                 if (
-                  item.type
-                    .toLowerCase()
-                    .search(searchedValue.toLowerCase()) !== -1
+                  item.type.toLowerCase().search(searchValue.toLowerCase()) !==
+                  -1
                 ) {
                   return item;
                 } else {
                   if (
                     item.model
                       .toLowerCase()
-                      .search(searchedValue.toLowerCase()) !== -1
+                      .search(searchValue.toLowerCase()) !== -1
                   ) {
                     return item;
                   } else {
                     if (
                       item.color
                         .toLowerCase()
-                        .search(searchedValue.toLowerCase()) !== -1
+                        .search(searchValue.toLowerCase()) !== -1
                     ) {
                       return item;
                     }
@@ -60,15 +60,6 @@ const home = () => {
                 return <ProductNotFound />;
               }
             }
-            
-            
-            
-            
-            else {
-              return searchedProducts.map(item => {
-                return <Product key={item.id} product={item} />;
-              });
-            }
           }}
         </ProductConsumer>
       </section>
@@ -76,4 +67,4 @@ const home = () => {
   );
 };
 
-export default home;
+

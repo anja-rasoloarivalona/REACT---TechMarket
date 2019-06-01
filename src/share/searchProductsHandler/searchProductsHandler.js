@@ -1,7 +1,7 @@
 import { ProductConsumer } from "../../context";
-import React from "react";
+import React from "./node_modules/react";
 import classes from './searchProductsHandler.css';
-import Title from '../../pages/Products/UI/Title/Title';
+import Title from '../../components/Title/Title';
 import ProductNotFound from '../../pages/Products/ProductNotFound/ProductNotFound';
 import Product from '../../components/Product/Product';
 

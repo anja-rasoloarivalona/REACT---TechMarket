@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '../UI/Title/Title';
+import Title from '../../../components/Title/Title';
 import ProdcutsList from '../ProductsList/ProductsList';
 import ProductsList from '../ProductsList/ProductsList';
 
