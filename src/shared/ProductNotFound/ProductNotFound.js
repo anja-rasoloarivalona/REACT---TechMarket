@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './ProductNotFound.css';
-import { ProductConsumer } from '../../../context';
+import { ProductConsumer } from '../../context';
 import { Link } from 'react-router-dom';
 
 const productNotFound = () => {

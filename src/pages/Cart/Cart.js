@@ -8,7 +8,7 @@ import ReactSVG from 'react-svg';
 import cartIcon from '../../assets/icon/SVG/cart.svg';
 import { Link } from 'react-router-dom';
 
-import ProductNotFound from '../Products/ProductNotFound/ProductNotFound';
+import ProductNotFound from '../../shared/ProductNotFound/ProductNotFound';
 import Product from '../../components/Product/Product';
 
 

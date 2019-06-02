@@ -3,7 +3,7 @@ import classes from "./ProductsHome.css";
 import { ProductConsumer } from "../../../context";
 import Product from "../../../components/Product/Product";
 import Title from "../../../components/Title/Title";
-import ProductNotFound from "../ProductNotFound/ProductNotFound";
+import ProductNotFound from "../../../shared/ProductNotFound/ProductNotFound";
 
 const home = () => {
   return (

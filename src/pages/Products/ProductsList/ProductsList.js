@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ProductConsumer } from '../../../context';
 import Product from '../../../components/Product/Product';
 import classes from './ProductsList.css';
-import ProductNotFound from '../ProductNotFound/ProductNotFound';
+import ProductNotFound from '../../../shared/ProductNotFound/ProductNotFound';
 
 
 class ProductsList extends Component {

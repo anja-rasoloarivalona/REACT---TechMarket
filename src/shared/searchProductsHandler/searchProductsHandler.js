@@ -2,7 +2,7 @@ import { ProductConsumer } from "../../context";
 import React from "react";
 import classes from './searchProductsHandler.css';
 import Title from '../../components/Title/Title';
-import ProductNotFound from '../../pages/Products/ProductNotFound/ProductNotFound';
+import ProductNotFound from '../ProductNotFound/ProductNotFound';
 import Product from '../../components/Product/Product';
 
 
