@@ -110,7 +110,7 @@ class HomeMain extends Component {
                 foveis turmis occultis certamina bellicosus cum occultis
                 emergentes sui subsidia sed nos abnuens.
               </p>
-              <Button buttonValue="Discover" path="/store/headphones" />
+              <Button buttonValue="Discover" path="/store/tv" />
             </div>
           </div>
 
