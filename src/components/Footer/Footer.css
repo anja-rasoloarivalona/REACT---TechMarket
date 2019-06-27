@@ -28,6 +28,7 @@
     .Footer  {
       
         height: 100%;
+        padding: 1rem 2rem;
         
     }
 }
@@ -37,6 +38,8 @@
         height: 40vh;
         margin: 0 3rem;
 }
+
+
 
 
 
@@ -59,6 +62,13 @@
         height: 80%;
         margin: 2rem;
     }    
+}
+
+@media screen and (max-width: 400px) {
+    .FooterItem {
+        width: 122%;
+        margin: 3rem 0;
+    }
 }
 
 .Title {

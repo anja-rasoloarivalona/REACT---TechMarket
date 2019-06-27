@@ -47,6 +47,7 @@
     text-transform: uppercase;
     margin: 4rem 0;
     color: var(--color-primary);
+    text-align: center;
 }
 
 @media screen and (max-width: 513px) {
