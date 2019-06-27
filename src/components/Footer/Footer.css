@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
 @media screen and (max-width: 966px) {
@@ -19,6 +20,15 @@
         justify-items: center;
         justify-content: center;
         padding: 3rem 6rem;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Footer  {
+      
+        height: 100%;
+        
     }
 }
 
@@ -47,7 +57,7 @@
         justify-content: center;
         width: 80%;
         height: 80%;
-        margin: 0;
+        margin: 2rem;
     }    
 }
 
