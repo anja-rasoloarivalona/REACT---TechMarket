@@ -27,13 +27,14 @@
 @media screen and (max-width: 577px) {
 
     .Container {
-        justify-content: center;
+        justify-content: space-around;
         flex-direction: column;
        
     }
 
     .ImgContainer  {
         width: 70vw;
+        margin: 2rem 0;
     }
 }
 
@@ -59,12 +60,26 @@
     }
 }
 
+.InfoContainer {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    line-height: 1.3;
+   
+}
 
 @media screen and (max-width: 577px) {
 
     .Details {
-        height: 40%;
+        margin: 2rem 0;
+        height: 100%;
+        align-items: center;
     }
+
+    .InfoContainer {
+        text-align: center;
+    }
+
+    
 }
 
 .TitleContainer {
@@ -84,11 +99,7 @@
     font-size: 1.6rem;
 }
 
-.InfoContainer {
-    margin: 2rem 0;
-    font-size: 1.3rem;
-    line-height: 1.3;
-}
+
 
 .Cta {
     display: flex;

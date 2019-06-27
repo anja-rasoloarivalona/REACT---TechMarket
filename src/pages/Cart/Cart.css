@@ -16,7 +16,14 @@
         align-items: center;
         justify-content: center;
     }
-  }
+}
+
+@media screen and (max-width: 650px) {
+    .Cart {
+        min-height: 0;
+        height: 100%;
+    }
+}
 
 .EmptyCart {
     width: 100vw;
