@@ -7,6 +7,16 @@
     height: calc(100vh - 8rem);
 }
 
+@media screen and (max-width: 577px) {
+
+    .Container {
+        height: 100%;
+        margin: 1rem 0;
+        margin-bottom: 7rem;
+       
+    }
+}
+
 .ImgContainer {
     width: 50vw;
     display: flex;
@@ -43,10 +53,19 @@
     object-fit: cover;
 }
 
+@media screen and (max-width: 577px) {
+
+    .Img {
+        width: 80%;
+    }
+
+  
+}
+
 
 
 .Details {
-    width: 30vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +92,7 @@
         margin: 2rem 0;
         height: 100%;
         align-items: center;
+        width: 60vw;
     }
 
     .InfoContainer {
@@ -85,6 +105,15 @@
 .TitleContainer {
     display: flex;
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 577px) {
+
+    .TitleContainer {
+        flex-direction: column;
+        text-align: center;
+       
+    }
 }
 
 .TitleContainer h1:first-child{
